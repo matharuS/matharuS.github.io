@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sajaan Matharu: Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="scss/main.css">
+		
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/velocityMIN.js" ></script>
+		<script type="text/javascript" src="js/totalTwoMIN.js" ></script>
+		
+
+		<!-- fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body id="contact"> 
+	<section class="s1">
+		<section class="header">
+			<div class="logo">
+				<h1><a href="index.html">Sajaan</a></h1>
+				<h1><a href="index.html">Matharu.</a></h1>
+			</div>
+			<div class="pagenav">
+				<ul>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="abilities.html">Abilities</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html" class="menuactive">Contact</a></li>
+				</ul>
+			</div>
+			<div class="mobileNav" >
+				<ul class="ul mobileBtn">
+					<li class="line1"></li>
+					<li class="line2"></li>
+					<li class="line3"></li>
+				</ul>
+				<ul class="mobileItems">
+					<li><a href="services.html">Services</a></li>
+					<li><a href="abilities.html">Abilities</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html" style="color:white;">Contact</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="main-cont">
+		<div class="bannerText cntr">
+			<h1>If you like what you see, send me a message and we can build something beautiful together!</h1>
+		</div>
+			<div class="container">
+					<section class="content">
+							<form action="http://formspree.io/sajaan.matharu@gmail.com" method="POST">
+								<span class="input input--nariko">
+									<input class="input__field input__field--nariko" name="name" type="text" id="name" required/>
+									<label class="input__label input__label--nariko" for="name">
+										<span class="input__label-content input__label-content--nariko">Name</span>
+									</label>
+								</span>
+								<span class="input input--nariko">
+									<input class="input__field input__field--nariko" name="email" type="email" id="email" required/>
+									<label class="input__label input__label--nariko" for="email">
+										<span class="input__label-content input__label-content--nariko">Email</span>
+									</label>
+								</span>
+								<span class="input input--nariko">
+									<input class="input__field input__field--nariko" name="phone" type="phone" id="phone" />
+									<label class="input__label input__label--nariko" for="phone">
+										<span class="input__label-content input__label-content--nariko">Phone</span>
+									</label>
+								</span>
+								<!-- temporary comment,  (This is a honeypot to catch webscrapers) -->
+								<input type="text" name="_gotcha" style="display:none" />
+									<label for="message"></label>
+									<textarea id="message" name="message" required></textarea>
+									<button type="submit">Submit</button>
+							</form>
+					</section>
+			</div>
+		</section>
+	</section>
+	</body>
+</html>

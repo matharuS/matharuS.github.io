@@ -1,0 +1,13 @@
+
+@mixin setup($col, $height, $oflow){
+	background-color: $col;
+	height: $height;
+	overflow: $oflow;
+}
+
+@mixin imgCont($height, $width, $background, $border){
+	background-color: $background;
+	height: $height;
+	width: $width;
+	border:$border;
+}
