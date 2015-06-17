@@ -217,6 +217,9 @@
 			color: white;
 			margin-top: 5%;
 			border-radius: 5px;
+			&:hover{
+				border-radius:50px;
+			}
 		}
 	}
 
