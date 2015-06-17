@@ -884,7 +884,9 @@ body {
     margin-top: 5%;
     border-radius: 5px; }
     #contact .s1 form button:hover {
-      border-radius: 50px; }
+      border-radius: 50px;
+      border: 3px solid #15C18E;
+      transition: 2s; }
 
 .messageCont {
   height: 150px;
