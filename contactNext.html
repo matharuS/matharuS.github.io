@@ -7,14 +7,9 @@
 		<title>Sajaan Matharu: Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="scss/main.css">
-		
 		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
 		<script type="text/javascript" src="js/velocityMIN.js" ></script>
 		<script type="text/javascript" src="js/totalNoClassie.js" ></script>
-		
-		
-
-		<!-- fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
@@ -50,13 +45,27 @@
 		</section>
 		<section class="main-cont">
 			<div class="messageCont cntr">
-					
+				<div class="theCont">
+					<ul class="ul">
+						<li class="li"><img src="img/checkmark.png"></li>
+						<li class="li"><p class="pCool">Message Submited !</p></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<script type="text/javascript">
-
+			$(document).ready(function(){
+				messageAnimation();
+				function messageAnimation(){
+					$('img')	
+						.velocity({rotateY:"180deg",rotateX:"180deg"},{duration:1000, delay:0})
+						.velocity({rotateZ:"180deg"}, {duration:1000, delay:0})
+					$('.pCool')
+						.velocity({translateX:"-1000%"},{duration:01, delay:0})
+						.velocity({translateX:"0%"},{duration:1000, delay:1500}, "slow")
+				}
+			});
 		</script>
-
 	</section>
 	</body>
 </html>

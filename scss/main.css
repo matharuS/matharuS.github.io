@@ -884,4 +884,29 @@ body {
     margin-top: 5%;
     border-radius: 5px; }
 
+.messageCont {
+  height: 150px;
+  width: 90%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .messageCont .theCont li {
+    vertical-align: middle; }
+    .messageCont .theCont li img {
+      height: 125px;
+      width: 125px;
+      border-radius: 100%; }
+  .messageCont .theCont .pCool {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    z-index: -200;
+    margin-left: 50px;
+    font-family: 'Poiret one', sans-serif; }
+    @media only screen and (max-width: 528px) {
+      .messageCont .theCont .pCool {
+        margin-left: 0; } }
+
 /*# sourceMappingURL=main.css.map */
