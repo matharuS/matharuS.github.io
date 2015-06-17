@@ -886,7 +886,8 @@ body {
     #contact .s1 form button:hover {
       border-radius: 100px;
       border: 3px solid #15C18E;
-      transition: 1s; }
+      transition: 1s;
+      letter-spacing: 5px; }
 
 .messageCont {
   height: 150px;
