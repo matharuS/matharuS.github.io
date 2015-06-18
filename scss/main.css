@@ -683,12 +683,8 @@ body {
   #about .s1 .main-cont ul {
     position: relative;
     display: block;
-    margin: 0 auto;
-    width: 90%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    margin: 0 auto 0 auto;
+    width: 90%; }
     #about .s1 .main-cont ul li {
       vertical-align: middle; }
       #about .s1 .main-cont ul li img {
@@ -696,11 +692,14 @@ body {
         height: 200px;
         width: 200px;
         border: 5px solid tomato;
-        border-radius: 100%; }
+        border-radius: 100%;
+        margin-top: 10%; }
       #about .s1 .main-cont ul li:nth-child(2) {
-        height: auto;
-        width: 50%;
-        margin-left: 6%; }
+        overflow: scroll;
+        width: 60%;
+        margin-left: 6%;
+        margin-top: 5%;
+        padding-bottom: 50px; }
       #about .s1 .main-cont ul li p {
         text-align: left;
         line-height: 1.5em;
@@ -708,14 +707,13 @@ body {
         margin-top: 10px;
         color: white;
         font-family: 'Poiret One', sans-serif; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 838px) {
       #about .s1 .main-cont ul li:nth-child(2) {
-        width: 90%;
-        margin: 25px auto 0 auto; }
-        #about .s1 .main-cont ul li:nth-child(2) p {
-          display: block;
-          margin: 10px auto 0 auto;
-          height: auto; } }
+        margin-left: 0;
+        width: 90%; } }
+    @media only screen and (max-width: 615px) {
+      #about .s1 .main-cont ul li:nth-child(2) {
+        width: 100%; } }
 
 #contact .s1 {
   background-color: #4894ea;
