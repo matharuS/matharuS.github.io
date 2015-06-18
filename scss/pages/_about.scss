@@ -23,7 +23,6 @@
 					width: 60%;
 					margin-left: 6%;
 					margin-top:5%;
-					
 					padding-bottom: 50px;
 				}
 
@@ -40,7 +39,7 @@
 				}
 				
 			  }
-			  @media only screen and (max-width:838px ){
+			  @media only screen and(max-width:838px ){
 			  	li{
 			  		&:nth-child(2){
 			  			margin-left:0;
@@ -49,7 +48,7 @@
 			  	}
 			  }
 
-			  @media only screen and (max-width:615px ){
+			  @media only screen and(max-width:615px ){
 			  	li{
 			  		&:nth-child(2){
 			  			width:100%;
