@@ -7,23 +7,24 @@
 				
 				position: relative;
 				display: block;
-				margin: 0 auto;
+				margin: 0 auto 0 auto;
 				width: 90%;
-			    top: 50%;
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-		        transform: translateY(-50%);
 
 			li{
 				vertical-align: middle;
+
 				img{
 					@include imgCont(200px, 200px, inherit, 5px solid tomato);
 					border-radius: 100%;
+					margin-top:10%;
 				}
 				&:nth-child(2){
-					height:auto;
-					width: 50%;
+					overflow: scroll;
+					width: 60%;
 					margin-left: 6%;
+					margin-top:5%;
+					
+					padding-bottom: 50px;
 				}
 
 				p{
@@ -39,26 +40,25 @@
 				}
 				
 			  }
-
-			  @media only screen and (max-width:650px ){
-			  	
-
+			  @media only screen and (max-width:838px ){
 			  	li{
 			  		&:nth-child(2){
-				  		width: 90%;
-				  		margin: 25px auto 0 auto;
-				  		p{
-				  		
-				  		display: block;
-				  		margin: 10px auto 0 auto;
-				  		height: auto;
-					  	}
-				  	}
-
-					 
+			  			margin-left:0;
+			  			width: 90%;
+			  		}
 			  	}
-			  	
 			  }
+
+			  @media only screen and (max-width:615px ){
+			  	li{
+			  		&:nth-child(2){
+			  			width:100%;
+			  		}
+			  	}
+
+			  }
+
+			  
 			}
 		}
 	}
