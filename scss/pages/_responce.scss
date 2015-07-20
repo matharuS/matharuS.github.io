@@ -1,0 +1,17 @@
+#responce{
+  div{
+    background-color: #A5FFC0;
+    height: 100%;
+    width: 100%;
+  }
+  p{
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+}

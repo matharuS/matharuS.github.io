@@ -1,0 +1,13 @@
+@mixin sectionSetup($col, $height, $oflow){
+	background-color: $col;
+	height: $height;
+	overflow: $oflow;
+}
+
+@mixin desBTN($height, $width, $border, $bacCol, $border-rad){
+	height: $height;
+	width: $width;
+	border: $border;
+	background-color:$bacCol;
+	border-radius: $border-rad;
+}
