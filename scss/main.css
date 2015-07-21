@@ -335,7 +335,7 @@ body {
       position: absolute;
       top: 0;
       right: 0;
-      padding: 15px;
+      padding: 14px 0 0 16px;
       font-size: 20px;
       font-family: Arial;
       margin: 20px 20px 0 0;
@@ -360,6 +360,7 @@ body {
         cursor: pointer; }
       #home .technical .techTotal > p {
         color: beige;
+        font-family: 'Dosis', sans-serif;
         text-align: center;
         padding-top: 40px;
         font-size: 20px;
@@ -393,36 +394,22 @@ body {
         line-height: 1.5em;
         font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif; }
       #home .technical .techTotal .tTitle {
-        color: beige;
+        color: #F7DBA3;
         font-size: 25px;
         margin: 25px 0 10px 4%; }
       #home .technical .techTotal .tText {
         margin-left: 7%;
         line-height: 1.5em;
-        color: #F7DBA3; }
-      #home .technical .techTotal .langT {
         color: beige;
+        width: 90%; }
+      #home .technical .techTotal .langT {
+        color: #F7DBA3;
         text-align: center;
         font-size: 25px;
-        margin: 40px 0 20px 0;
+        margin: 40px 0 40px 0;
         letter-spacing: 2px; }
-      #home .technical .techTotal .code ul {
-        border: 2px solid black; }
-      #home .technical .techTotal .code li:nth-child(1) {
-        margin-right: 2%; }
-        @media screen and (max-width: 785px) {
-          #home .technical .techTotal .code li:nth-child(1) {
-            margin: 0; } }
-      #home .technical .techTotal .code li:nth-child(3) {
-        margin: 0 2%; }
-        @media screen and (max-width: 785px) {
-          #home .technical .techTotal .code li:nth-child(3) {
-            margin: 0; } }
-      #home .technical .techTotal .code li:nth-child(5) {
-        margin-left: 2%; }
-        @media screen and (max-width: 785px) {
-          #home .technical .techTotal .code li:nth-child(5) {
-            margin: 0; } }
+      #home .technical .techTotal .code li {
+        margin: 0 0 20px 0; }
       #home .technical .techTotal .code img {
         height: 125px;
         width: 125px; }
@@ -707,7 +694,7 @@ body {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         font-size: 50px;
-        color: black;
+        color: #B860C1;
         position: relative; }
   #home .about {
     overflow: hidden;
@@ -943,8 +930,10 @@ body {
       color: black;
       text-align: center; }
     #projects .s1 .projLi {
+      vertical-align: top;
       height: 240px;
-      width: 240px; }
+      width: 240px;
+      margin-bottom: 70px; }
       #projects .s1 .projLi p {
         color: white;
         font-size: 20px;

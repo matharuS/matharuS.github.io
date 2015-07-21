@@ -316,7 +316,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      padding: 15px;
+      padding: 14px 0 0 16px;
       font-size: 20px;
       font-family: Arial;
       margin: 20px 20px 0 0;
@@ -349,6 +349,7 @@
       }
       > p {
         color: beige;
+        font-family: 'Dosis', sans-serif;
         text-align: center;
         padding-top: 40px;
         font-size: 20px;
@@ -393,45 +394,27 @@
         font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       .tTitle{
-        color: beige;
+        color: #F7DBA3;
         font-size: 25px;
         margin: 25px 0 10px 4%;
       }
       .tText{
         margin-left: 7%;
         line-height: 1.5em;
-        color: #F7DBA3;
+          color: beige;
+        width: 90%;
+
       }
       .langT{
-        color: beige;
+        color: #F7DBA3;
         text-align: center;
         font-size: 25px;
-        margin: 40px 0 20px 0;
+        margin: 40px 0 40px 0;
         letter-spacing: 2px;
       }
       .code{
-        ul{
-          border:2px solid black;
-        }
         li{
-          &:nth-child(1){
-          margin-right: 2%;
-          @media screen and (max-width: 785px){
-            margin: 0;
-          }
-          }
-          &:nth-child(3){
-            margin: 0 2%;
-            @media screen and (max-width: 785px){
-            margin: 0;
-            }
-          }
-          &:nth-child(5){
-          margin-left: 2%;
-          @media screen and (max-width: 785px){
-            margin: 0;
-          }
-          }
+          margin: 0 0 20px 0
 
         }
         img{
@@ -841,7 +824,7 @@
        -ms-transform: translateY(-50%);
        transform: translateY(-50%);
        font-size:50px;
-       color:black;
+       color:#B860C1;
        position: relative;
 
 
