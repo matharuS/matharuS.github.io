@@ -144,15 +144,13 @@ body {
           top: 30%;
           -webkit-transform: translateY(-30%);
           -ms-transform: translateY(-30%);
-          transform: translateY(-30%);
-          background-color: black; } }
+          transform: translateY(-30%); } }
       @media only screen and (max-height: 420px) {
         #home .banner .textHold {
           top: 20%;
           -webkit-transform: translateY(-20%);
           -ms-transform: translateY(-20%);
-          transform: translateY(-20%);
-          background-color: black; } }
+          transform: translateY(-20%); } }
       #home .banner .textHold h1,
       #home .banner .textHold p {
         color: tomato;
