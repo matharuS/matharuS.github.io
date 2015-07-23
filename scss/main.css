@@ -735,7 +735,8 @@ body {
         border: 3px solid white;
         border-radius: 100%; }
       #home .about .abtCont .abtText {
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 30px; }
     #home .about .formTotal {
       width: 50%;
       float: right; }
