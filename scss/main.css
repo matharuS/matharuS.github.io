@@ -332,10 +332,15 @@ body {
       font-family: 'Dosis', sans-serif; }
       #home .portfolio h1 i {
         font-size: 22px; }
+      @media only screen and (max-width: 420px) {
+        #home .portfolio h1 {
+          font-size: 25px; }
+          #home .portfolio h1 i {
+            font-size: 19px; } }
     #home .portfolio img {
       position: absolute;
-      bottom: 5%;
-      top: 5%;
+      bottom: 2%;
+      top: 7%;
       left: 0;
       right: 0;
       margin: auto;
@@ -344,6 +349,12 @@ body {
         border: 10px solid black;
         border-radius: 10px;
         transition: 0.6s; }
+      @media only screen and (max-width: 840px), only screen and (max-height: 640px) {
+        #home .portfolio img {
+          height: 50%; } }
+      @media only screen and (max-width: 400px) {
+        #home .portfolio img {
+          height: 40%; } }
   #home .technical {
     height: 150px;
     width: 100%;
@@ -1892,7 +1903,7 @@ body {
       background-color: lightgreen;
       bottom: 0;
       right: 0;
-      background-image: url("../img/depict/cloud1COMP.jpg");
+      background-image: url("../img/depict/cloud1COMP.JPG");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover; }

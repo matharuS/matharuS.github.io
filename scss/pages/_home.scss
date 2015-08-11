@@ -304,11 +304,17 @@
       i{
         font-size: 22px;
       }
+      @media only screen and (max-width: 420px){
+        font-size: 25px;
+        i{
+          font-size: 19px;
+        }
+      }
     }
     img{
       position: absolute;
-      bottom: 5%;
-      top: 5%;
+      bottom: 2%;
+      top: 7%;
       left: 0;
       right: 0;
       margin: auto;
@@ -318,6 +324,12 @@
         border-radius: 10px;
         transition: 0.6s;
       }
+      @media only screen and (max-width: 840px), only screen and (max-height: 640px){
+        height: 50%;
+      }
+        @media only screen and (max-width: 400px){
+          height: 40%;
+        }
     }
   }
 
