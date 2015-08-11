@@ -42,20 +42,16 @@
       -webkit-transform: translateY(-20%);
       -ms-transform: translateY(-20%);
       transform: translateY(-20%);
-
     }
-
-
-
     h1,
     p{
-      color: tomato;
       text-align: center;
-
-
     }
-
+    p{
+      color:#46C1F2;
+    }
     h1{
+      color: #FFE068;
       font-size: 40px;
       font-family: 'Megrim', Arial;
       @media only screen and (max-width: 825px){
@@ -293,6 +289,38 @@
     }
 
   }
+/*==================================================================================PORTFOLIO*/
+  .portfolio{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #346E7E;
+    overflow: hidden;
+    h1{
+      color: white;
+      text-align: center;
+      //font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Dosis', sans-serif;
+      i{
+        font-size: 22px;
+      }
+    }
+    img{
+      position: absolute;
+      bottom: 5%;
+      top: 5%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 70%;
+      &:hover{
+        border: 10px solid black;
+        border-radius: 10px;
+        transition: 0.6s;
+      }
+    }
+  }
+
 /*==================================================================================TECHNICAL*/
 
   .technical{
@@ -1085,11 +1113,18 @@
   		button{
   			height: 70px;
   			width: 220px;
-  			background-color: #19E8AA;
+  			background-color: #99F586;
   			border:none;
   			color: white;
   			margin-top: 5%;
-  			border-radius: 5px;
+        font-family: 'dosis', serif;
+  			&:hover{
+          border-radius: 50px;
+          border: 2px solid #00A875;
+          letter-spacing: 5px;
+          color: black;
+          transition: 0.8s;
+        }
   		}
   	}//end of form
 }
@@ -1099,7 +1134,7 @@
 /*==================================================================================FOOTER*/
   .footer{
     height:auto;
-    background-color: tomato;
+    background-color: #99F586;
     overflow: hidden;
     p{
       font-size:15px;
@@ -1122,7 +1157,8 @@
       li{
         a{
           &:hover{
-            color: #F7EEA3;
+            border-bottom: 2px solid black;
+            padding-bottom: 2px;
           }
         }
         &:nth-child(2){

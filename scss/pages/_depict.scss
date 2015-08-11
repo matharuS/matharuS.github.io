@@ -1,0 +1,1368 @@
+*{
+	list-style-type: none;
+	text-decoration: none;
+	margin:0;
+	padding: 0;
+	font-weight: normal !important;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+	}
+.clearfix:after {
+	clear: both;
+}
+html,
+body{
+	height: 100%;
+	min-height: 100%;
+}
+
+/*
+*	Modular code
+*/
+
+.cntr{
+	display: block;
+	margin: 0 auto;
+}
+
+.crcl{
+	border-radius: 100%;
+}
+
+.ul{
+	text-align: center;
+}
+
+.li{
+	display: inline-block;
+}
+
+.title{
+	text-align: center;
+}
+.noPoint{
+	cursor: auto !important;
+}
+
+.noClick{
+	 pointer-events: none;
+}
+.oScroll{
+	overflow: scroll !important;
+}
+.oHide{
+	overflow: hidden;
+}
+
+
+.none{
+	display: none;
+}
+
+
+
+//START OF PAGE CSS
+
+
+.alertness{
+	position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 230px;
+  width: 380px;
+  border: 5px solid #979BC4;
+  background-color: #93C6D6;
+  z-index: 100000;
+  display: block;
+  @media only screen and (max-width: 401px){
+    height: 250px;
+    width: 300px;
+
+  }
+  .words{
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin: 17px auto 0 auto;
+    width: 90%;
+    line-height: 1.2em;
+    color: #5B7A7C;
+    font-family: $maven;
+
+  }
+  h3{
+    color: #435A5B;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    font-family: $dosis;
+    a{
+      color: #435A5B;
+      border-bottom: 1px solid #435A5B;
+    }
+  }
+  a{
+    border-bottom: 1px solid #435A5B;
+    color: #435A5B;
+  }
+
+  .leave{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    height: 50px;
+    background-color: #F28E8E;
+    &:hover{
+      cursor:pointer;
+    }
+
+    p{
+        font-size: 25px;
+        margin-top: 10px;
+        color: #FFCA96;
+    }
+  }
+}
+.s1{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+	opacity: 0.1;
+	#nav{
+	  width: 100%;
+	  height: 100px;
+	  background-color: white;
+	  overflow: hidden;
+		font-family: $maven;
+	  svg{
+	    height: 50px;
+	    width: 50px;
+	    border: 4px solid white;
+	  }
+	  ul{
+	    margin-top: 5px;
+	  }
+	  li{
+	    vertical-align: middle;
+	    &:nth-child(-n+2){
+	      margin-right: 30px;
+	      width: 80px;
+	    }
+	    &:nth-child(n+4){
+	      margin-left: 30px;
+	      width: 80px;
+	    }
+			@media only screen and (max-width: 750px){
+				&:nth-child(-n+2){
+		      margin-right: 15px;
+		    }
+		    &:nth-child(n+4){
+		      margin-left: 15px;
+		    }
+			}
+			@media only screen and (max-width: 500px){
+				&:nth-child(-n+2){
+		      margin-right: 5px;
+					width: 70px;
+		    }
+		    &:nth-child(n+4){
+		      margin-left: 5px;
+					width: 70px;
+		    }
+			}
+			@media only screen and (max-width: 399px){
+				&:nth-child(-n+2){
+		      margin-right: 2px;
+					width: 50px;
+					a{
+						font-size: 15px;
+					}
+		    }
+				&:nth-child(n+4){
+		      margin-left: 2px;
+					width: 50px;
+					a{
+						font-size: 15px;
+					}
+		    }
+
+			}
+	  }
+
+		p{
+			font-size: 20px;
+		}
+		a{
+			color: black;
+		}
+	}//end of nav
+
+  .mainCont{
+			.b1,
+			.b2,
+			.b3,
+			.b4{
+				background-position: center center;
+	      background-repeat: no-repeat;
+	      background-size: cover;
+
+	      height:85%;
+	      width: 95%;
+	      position: absolute;
+	      bottom:0;
+	      left: 2.5%;
+	 		 border: 20px solid #AF8656;
+			 @media only screen and (max-width: 600px){
+				 border: 15px solid #AF8656;
+			 }
+			 @media only screen and (max-height: 630px){
+				 height:85%;
+			 }
+			 @media only screen and (max-height: 550px){
+				 height:82%;
+			 }
+			 @media only screen and (max-height: 460px){
+				 height:79%;
+			 }
+			 @media only screen and (max-height: 400px){
+				 height:75%;
+			 }
+			 @media only screen and (max-height: 340px){
+				 height:72%;
+			 }
+			 @media only screen and (max-height: 295px){
+				 height:69%;
+			 }
+			}
+			.b1{background-image: url('../img/depict/jamesJeanCOMP.jpg');}
+			.b2{background-image: url('../img/depict/bannerIMG2.jpg');}
+			.b3{background-image: url('../img/depict/bannerIMG3.jpg');}
+
+
+			.b2,
+			.b3,
+			.b4{
+				opacity: 0;
+			}
+		.textC{
+			color: white;
+			position: absolute;
+			bottom: 5%;
+			left: 6%;
+			font-family: $maven;
+			h1{margin: 0;}
+			@media only screen and (max-width: 600px){
+				bottom: 40px;
+				left: 50px;
+				h1{
+					font-size: 25px;
+				}
+			}
+
+		}
+		button{
+			height: 50px;
+			width: 150px;
+			background-color: black;
+			border:2px solid lightblue;
+			color: lightblue;
+			margin: 10px 0 0 0;
+			font-size: 12px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+
+  }//end mainCont
+
+}//end s1
+
+.s2{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+	opacity: 0.1;
+
+	iframe{
+		margin-top: 2.5%;
+		height:90% ;
+		width:95% ;
+	}
+
+}//end s2
+
+.s3{
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  overflow: hidden;
+  position: relative;
+	opacity: 0.1;
+	.exclusive{
+	  position: absolute;
+	  z-index: 100;
+	  height:150px;
+	  width:150px;
+		border-radius: 100%;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  margin: auto;
+
+	  //background-color:rgba(30, 100, 230, .7);
+		background-color:rgba(100, 77, 180, .9);
+		&:hover{
+			cursor: crosshair;
+
+		}
+		.titleP{
+			font-family:  "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			color: white;
+			letter-spacing: 3px;
+			//padding-top: 19px;
+			padding-top: 57px;
+			line-height: 1;
+			text-align: center;
+			left: 0;
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+		  margin: auto;
+
+
+		}
+		.exitE{
+
+			height: 40px;
+			width: 40px;
+			border: 2px solid white;
+			border-radius: 100%;
+			background-color: transparent;
+			font-size: 20px;
+			position: absolute;
+			top: 15px;
+			right: 5%;
+			opacity:0;
+			&:hover{
+				cursor: pointer;
+			}
+
+
+	    p{
+	      color: white;
+	      padding-left: 13px ;
+				padding-top: 5px;
+				float: none;
+				position: absolute;
+	    }
+	  }//end exitE
+		.afterE{
+			opacity:0;
+	    height: 90%;
+	    width: 90%;
+	    //background-color: rgba(220, 180, 70, .3);
+			background-color:#7C5EE0;
+			position: absolute;
+			bottom: 0;
+			left:5%;
+			overflow: scroll;
+
+			.subNav{
+				text-align: center;
+			background-color:rgba(100, 77, 160, .9);
+				height: 75px;
+
+				p{
+					display: inline-block;
+					width: 150px;
+					vertical-align: middle;
+					color: white;
+					font-size: 20px;
+					margin-top: 25px;
+					font-family: $dosis;
+					margin-top: 15px;
+
+					@media only screen and (max-width: 751px){
+						font-size: 17px;
+						width: 100px;
+						&:nth-child(n+2){
+							margin-left: 15px;
+						}
+					}
+					@media only screen and (max-width: 530px){
+						margin-top: 20px;
+						font-size: 15px;
+						width: 70px;
+						border-bottom: 2px solid white;
+						padding-bottom: 2px;
+						vertical-align: bottom;
+						&:nth-child(n+2){
+							margin-left: 10px;
+						}
+					}
+
+					&:hover{
+						cursor: pointer;
+					}
+					&:nth-child(n+2){
+						margin-left: 20px;
+					}
+
+				}
+			}//end subNav
+			.chris{
+				.leftText{
+					display: inline-block;
+				  width: 49.5%;
+				  height: 100%;
+				  vertical-align: top;
+
+				  @media only screen and (max-width: 875px){
+				    display: block;
+				    width: 100%;
+				  }
+
+				  h1{
+				    color: white;
+				    margin-left: 5%;
+				    font-family: $dosis;
+
+				  }
+				  .summary{
+				    color: white;
+				    font-size: 18px;
+				    color: white;
+				    margin-left: 10%;
+				    width: 80%;
+				    font-family: $maven;
+				    @media only screen and (max-width: 930px){
+				      font-size: 15px;
+				    }
+				    @media only screen and (max-width: 875px){
+				      line-height: 1.5em;
+				    }
+
+				  }
+				  .works{
+
+				    button{
+				      height: 70px;
+				      width: 200px;
+				      background-color: inherit;
+				      border: 3px solid rgba(0,0,0,0.5);
+				      color: rgba(0,0,0,0.5);
+				      font-size:20px;
+				      margin-top: 30px;
+				      margin-bottom: 30px;
+				    }
+				  }
+				  .links{
+				    font-family: $dosis;
+				    margin-left: 10%;
+				    a{
+				      color: white;
+				      display: block;
+				      margin-bottom: 5px;
+				    }
+				  }
+				}
+				.rightImg{
+					text-align: center;
+					display: inline-block;
+				  width: 49.5%;
+				  height: 100%;
+				  vertical-align: top;
+
+				  @media only screen and (max-width: 875px){
+				    display: block;
+				    width: 100%;
+				  }
+
+				  div{
+				    border: 13px solid black;
+				    display: inline-block;
+				    vertical-align: middle;
+				    margin: 20px;
+				  }
+				  .ai1{
+				     height: 200px; width: 200px;
+				     background-image: url('../img/depict/woman.png');
+				     background-position: center center;
+				     background-repeat: no-repeat;
+				     background-size: cover;
+				     @media only screen and (max-width: 1095px){
+				       height: 150px;
+				       width: 150px;
+				     }
+				     @media only screen and (max-width: 875px){
+				       height:300px ;
+				       width:300px ;
+				     }
+
+				     @media only screen and (max-width: 775px){
+				       height:200px ;
+				       width:200px ;
+				     }
+
+				     @media only screen and (max-width: 550px){
+				       height:150px ;
+				       width:150px ;
+				       margin: 10px;
+				     }
+				   }
+				  .ai2{
+				    height: 200px; width: 200px;
+				    background-image: url('../img/depict/hotelDuncan.jpg');
+				    background-position: center center;
+				    background-repeat: no-repeat;
+				    background-size: cover;
+				    @media only screen and (max-width: 1095px){
+				      height: 150px;
+				      width: 150px;
+				    }
+				    @media only screen and (max-width: 875px){
+				      height:300px ;
+				      width:300px ;
+				    }
+
+				    @media only screen and (max-width: 775px){
+				      height:200px ;
+				      width:200px ;
+				    }
+
+				    @media only screen and (max-width: 550px){
+				      height:150px ;
+				      width:150px ;
+				      margin: 10px;
+				    }
+				  }
+				  .ai3{
+				    height: 200px; width: 425px;
+				    background-image: url('../img/depict/Masque.jpg');
+				    background-position: center center;
+				    background-repeat: no-repeat;
+				    background-size: cover;
+				    @media only screen and (max-width: 1095px){
+				      height: 175px;
+				      width: 375px;
+				    }
+				    @media only screen and (max-width: 930px){
+				      height: 175px;
+				      width: 325px;
+				    }
+				    @media only screen and (max-width: 875px){
+				      height: 300px;
+				      width: 650px;
+				    }
+
+				    @media only screen and (max-width: 775px){
+				      height:200px ;
+				      width:425px ;
+				    }
+
+				    @media only screen and (max-width: 550px){
+				      height:150px ;
+				      width:320px ;
+				      margin: 10px;
+				    }
+				  }
+				}
+				.depictE{
+					width: 100%;
+				  h1{
+				    color: white;
+				    font-size: 25px;
+				    text-align: center;
+				    font-family: $dosis;
+				    letter-spacing: 3px;
+				    border-bottom: 3px solidrgba(0,0,0,0.5);
+				    padding-bottom: 5px;
+				  }
+
+				  img{
+				    border: 10px solid white;
+				    height: 400px;
+				    width: 700px;
+				    margin-top: 50px;
+				  }
+				  section{
+				    background-image: url('../img/depict/cDoyle.jpg');
+				    background-position: center center;
+				    background-repeat: no-repeat;
+				    background-size: cover;
+				    border: 15px solid white;
+				    height: 400px;
+				    width: 700px;
+				    margin-top: 50px;
+				    @media only screen and (max-width:860px ){
+				      height: 340px;
+				      width: 595px;
+				      margin-top: 35px;
+				    }
+
+				    @media only screen and (max-width:730px ){
+				    height: 280px;
+				    width: 490px;
+				    margin-top: 35px;
+				    border: 12px solid white;
+				    }
+
+				    @media only screen and (max-width:600px ){
+				    height: 200px;
+				    width: 350px;
+				    margin-top: 35px;
+				    }
+
+				    @media only screen and (max-width:425px ){
+				    height: 160px;
+				    width: 280px;
+				    margin-top: 35px;
+				    border: 9px solid white;
+				    }
+				  }
+				  video{
+				    border: 15px solid white;
+				    height: 400px;
+				    width: 700px;
+				    display: block;
+				    margin: 50px auto 0 auto;
+				    @media only screen and (max-width:860px ){
+				    height: 340px;
+				    width: 595px;
+				    margin-top: 35px;
+				    }
+
+				    @media only screen and (max-width:730px ){
+				    height: 280px;
+				    width: 490px;
+				    margin-top: 35px;
+				    border: 12px solid white;
+				    }
+
+				    @media only screen and (max-width:600px ){
+				    height: 200px;
+				    width: 350px;
+				    margin-top: 35px;
+				    }
+
+				    @media only screen and (max-width:425px ){
+				    height: 160px;
+				    width: 280px;
+				    margin-top: 35px;
+				    border: 9px solid white;
+				    }
+				  }
+				  p{
+				    font-family: monospace;
+				    color: white;
+				    font-size: 20px;
+				    text-align: center;
+				    margin: 10px 0 0 0;
+				  }
+				}
+				.shop{
+					height: 150px;
+					background-color: rgba(0,0,0,0.5);
+					position: relative;
+					padding-top: 35px;
+					margin-top: 30px;
+					button{
+						position: relative;
+						color: tomato;
+						background-color: transparent;
+						border: 4px solid tomato;
+						font-size: 20px;
+						letter-spacing: 2px;
+						padding: 20px 30px;
+						display: block;
+						margin: 0 auto;
+						&:hover{
+							letter-spacing: 4px;
+							transition: .7s;
+						}
+					}
+				}
+				.moreArt{
+					height: 300px !important;
+				  .hold{
+				    text-align: center;
+				    div{
+				      display: inline-block;
+				      vertical-align: top;
+				      margin: 30px 10px 0 0;
+				      &:hover{
+				        cursor: pointer;
+				      }
+				      section{
+				        height: 200px;
+				        width: 300px;
+				        border: 10px solid beige;
+				        @media only screen and (max-width: 1100px){
+				          height: 150px;
+				          width: 250px;
+
+				        }
+				        @media only screen and (max-width: 925px){
+				          height: 125px;
+				          width: 225px;
+
+				        }
+				        @media only screen and (max-width: 565px){
+				          height: 100px;
+				          width: 175px;
+
+				        }
+				      }
+				      .sect1{
+				        background-image: url('../img/depict/universal.jpg');
+				        background-position: center center;
+				        background-repeat: no-repeat;
+				        background-size: cover;
+				      }
+				      .sect2{
+				        background-image: url('../img/depict/nicole.png');
+				        background-position: center center;
+				        background-repeat: no-repeat;
+				        background-size: cover;
+				      }
+				      .sect3{
+				        background-image: url('../img/depict/eric.jpg');
+				        background-position: center center;
+				        background-repeat: no-repeat;
+				        background-size: cover;
+				      }
+				      p{
+				        color: white;
+				        font-size: 18px;
+				        margin-top: 5px;
+				        font-family: $dosis;
+				      }
+				    }
+				  }
+				}
+			}//end chris
+
+
+
+		}//end afterE
+	}//end exclusive
+
+  ul{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    li{
+      position: absolute;
+      height: 50%;
+      width: 50%;
+      overflow: hidden;
+      &:hover{
+        cursor: pointer;
+      }
+
+      .liIMG{
+        height: 150px;
+        width: 150px;
+				position: absolute;
+				top: 40%;
+				bottom:70% ;
+				left:0 ;
+				right:0 ;
+				margin: auto;
+      }
+      .liP{
+        font-size: 20px;
+        color: white;
+				position: absolute;
+				top:60% ;
+				bottom:40% ;
+				left:0 ;
+				right:0 ;
+				margin: auto;
+        text-align: center;
+				font-family: $maven;
+
+
+      }
+
+    }//end li
+
+    .li1{
+        background-color: lightgray;
+        top:0;
+        left: 0;
+				 background-image: url('../img/depict/design2.png');
+		     background-position: center center;
+		     background-repeat: no-repeat;
+		     background-size: cover;
+
+				img{
+					height: 100px;
+					width:120px;
+
+				}
+				.after{
+					overflow-x: hidden;
+					p{
+						color: tomato;
+						width: 80% ;
+						line-height: 2em;
+
+					}
+					.imgHold{
+						display: inline-block;
+						height: 99%;
+						width: 50%;
+
+
+						@media only screen and (max-width:815px){
+							display: block !important;
+							height: 200px !important;
+							width: 100% !important;
+						}
+						@media only screen and (max-height:590px){
+							width: 25%;
+						}
+					.imgRotate{
+						border: 15px solid white;
+						height: 260px;
+						width: 510px;
+						margin: auto;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 5%;
+						right: 95%;
+
+						@media only screen and (max-width:1100px){
+							height: 185px;
+							width: 310px;
+							border: 10px solid white;
+						}
+						@media only screen and (max-height:590px){
+							height: 185px;
+							width: 310px;
+							border: 10px solid white;
+						}
+
+						@media only screen and (max-width:815px){
+							left: 0 !important;
+							right: 0 !important;
+							top: 200px !important;
+							bottom: 70% !important;
+						}
+						@media only screen and (max-width: 399px){
+							height: 150px;
+							width: 290px;
+						}
+						.r1{
+								height: 100%;
+								width: 100%;
+								background-image: url('../img/depict/noahBradley2.jpg');
+								 background-position: center center;
+								 background-repeat: no-repeat;
+								 background-size: cover;
+								 position: relative;
+								 top: 0;
+								 left: 0;
+
+							}
+							.r2{
+								height: 100%;
+								width: 100%;
+								background-image: url('../img/depict/jJeanNoahSide.jpg');
+								 background-position: center center;
+								 background-repeat: no-repeat;
+								 background-size: cover;
+								 position: absolute;
+								 top: 0;
+								 left: 0;
+								 opacity: 0;
+
+							}
+
+					}//end imgRotate
+				}//end imgHold
+				.textC{
+					height: 350px;
+					width: 450px;
+					padding: 0;
+					font-family: $noto;
+					position: absolute;
+					top: 0;
+					right: 50%;
+					left: 50%;
+					bottom: 0;
+					margin: auto;
+
+					@media only screen and (max-width:1100px){
+						left:45% ;
+						right: 55%;
+						h1{ font-size: 25px;}
+						.mainp{
+						font-size: 20px;}
+						.specs{
+						font-size: 17px;}
+
+					}
+						@media only screen and (max-width:1010px){
+							left: 40%;
+							right: 60%;
+						}
+
+					@media only screen and (max-width:815px){
+						display: block !important;
+						width: 100% !important;
+						top: 400px;
+						bottom: 0;
+						left:0 ;
+						right:0 ;
+
+					}
+
+					@media only screen and (max-height: 475px){
+
+						h1{font-size: 20px;}
+						.mainP{font-size: 15px;}
+						.specs{font-size: 12px;}
+					}
+					h1{
+						color: white;
+						margin-left: 10%;
+					}
+					.mainP{
+						color: white;
+						margin-top: 5%;
+						margin-left: 10%;
+					}
+					.specs{
+						margin-top: 5%;
+						margin-left: 10%;
+						width: 80%;
+					}
+				}//end textC
+			}//end after
+		}//end .li1
+      .li2{
+        background-color: aqua;
+				background-image: url('../img/depict/jamesJean2COMP.jpg');
+		     background-position: center center;
+		     background-repeat: no-repeat;
+		     background-size: cover;
+        top:0;
+        right: 0;
+				img{
+					height: 80px;
+					width:120px;
+
+
+				}
+				.after{
+					font-family: $maven;
+					img{
+						height: 300px;
+						width: 550px;
+						border: 15px solid white;
+						margin-top: 5%;
+						@media only screen and (max-width: 700px){
+							height:200px ;
+							width:400px ;
+							border: 10px solid white;
+						}
+						@media only screen and (max-width: 500px){
+							height:130px ;
+							width:280px ;
+							border: 7px solid white;
+						}
+					}
+					p{
+						line-height: 1.5em;
+						font-size: 20px;
+						color: white;
+						width: 80%;
+						text-align: center;
+						margin-top: 5%;
+						@media only screen and (max-width: 500px){
+							font-size: 15px;
+						}
+					}
+					.specs{
+						margin-top: 5%;
+						margin-bottom: 5%;
+						height: 17%;
+						width: 60%;
+						background-color: rgba(200,75,75,0.5);
+					p{
+						color: white;
+						padding-top: 30px;
+						text-align: center;
+						@media only screen and (max-height: 450px){
+							padding-top: 15px;
+						}
+					}
+					}
+				}
+
+      }//end li2
+      .li3{
+        background-color: tomato;
+        bottom: 0;
+        left:0;
+				background-image: url('../img/depict/handBuilt1COMP.jpg');
+		     background-position: center center;
+		     background-repeat: no-repeat;
+		     background-size: cover;
+				 img{
+					 height: 100px;
+					 width: 120px;
+				 }
+				 .after{
+						p{
+
+							color: white;
+							font-size: 20px;
+							font-family: $maven;
+							text-align: center;
+							margin-top: 20%;
+						}
+				 }
+
+      }//end li3
+      .li4{
+        background-color: lightgreen;
+        bottom: 0;
+        right: 0;
+				background-image: url('../img/depict/cloud1COMP.JPG');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				img{
+					height: 100px;
+					width: 100px;
+				}
+				.after{
+					 p{
+						 color: white;
+					 	font-size: 20px;
+					 	font-family: $maven;
+					 	text-align: center;
+					 	margin-top: 20%;
+					 }
+				}
+      }//end li4
+
+  }//ul end
+
+  .exit1,
+	.exit2,
+  .exit3,
+  .exit4{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    position: absolute;
+		top: 10px;
+		right: 2.5%;
+    opacity:0;
+		&:hover{
+			cursor: pointer;
+		}
+
+
+    p{
+      color: white;
+			width: 15px !important;
+      //padding: 0 0 0 14px ;
+			margin: 6px 0 0 13px !important;
+			float: none !important;
+
+    }
+  }
+  .after{
+    opacity:0;
+    height: 90%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, .7);
+		position: absolute;
+		bottom: 0;
+		left:2.5%;
+		overflow: hidden;
+		@media only screen and (max-width: 700px){
+			width: 90%;
+		  left: 5%;
+		}
+		@media only screen and (max-height: 575px){
+			height: 87%;
+		}
+		@media only screen and (max-height: 450px){
+			height: 84%;
+		}
+		@media only screen and (max-height: 360px){
+			height: 80%;
+		}
+
+  }
+
+
+
+}//end of s3
+.s4{
+	height: auto;
+	width: 100%;
+	position: relative;
+	background-color: lightblue;
+	opacity: 0.1;
+	overflow: hidden;
+	background-image: url('../img/depict/concreteCOMP.png');
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 font-family: $maven;
+	h1{
+		color: black;
+		text-align: center;
+		font-family: $dosis;
+			@media only screen and (max-width: 525px){
+				font-size: 25px;
+				span{
+					font-size: 15px;
+				}
+			}
+
+		span{
+			font-size: 20px;
+			margin-left: 20px;
+		}
+	}
+	.imgHold{
+		img{
+			height: 300px;
+			width: 600px;
+			border: 15px solid black;
+			background-color: lightgray;
+			@media only screen and (max-width: 650px){
+				height: 200px;
+				width: 400px;
+				border: 10px solid black;
+			}
+			@media only screen and (max-width: 425px){
+				height: 150px;
+				width: 300px;
+				border: 8px solid black;
+			}
+		}
+	}
+	.pCont{
+		color: black;
+		max-width: 650px;
+		text-align: center;
+		line-height: 1.5em;
+		margin-top: 20px;
+		font-family: $noto;
+			@media only screen and (max-width: 752px){
+				max-width: 80%;
+			}
+
+
+	}
+	.avail{
+		color: black;
+		text-align: center;
+		width: 100px;
+		margin-top: 20px;
+		border-bottom: 2px solid black;
+	}
+	.ul{
+		margin-top: 10px;
+		li{
+			vertical-align: top;
+			&:nth-child(2){
+				margin: 0 20px;
+			}
+		}
+		img{
+			height: 50px;
+			width: 50px;
+			border-radius: 100%;
+		}
+	}
+	.btnHold{
+		text-align: center;
+		.preOrder{
+			display: inline-block;
+			margin-top: 20px;
+			height: 50px;
+			width: 150px;
+			background-color: transparent;
+			border:2px solid #52DD89;
+			color: #52DD89;
+			margin-right: 40px;
+			&:hover{
+				background-color: #52DD89;
+				color: black;
+				letter-spacing: 2px;
+				transition: 1s;
+			}
+			@media only screen and (max-width: 399px){
+			margin-right: 0;
+			}
+		}
+		.moreInfo{
+			display: inline-block;
+			margin-top: 20px;
+			height: 50px;
+			width: 150px;
+			background-color: transparent;
+			border:2px solid #52BDDD;
+			color: #52BDDD;
+			&:hover{
+				background-color: #52BDDD;
+				color: white;
+				letter-spacing: 2px;
+				transition: 1s;
+			}
+		}
+	}
+	.s_r{
+		margin-top: 20px;
+		margin: 20px  0;
+		color:black;
+		text-align: center;
+		font-size: 15px;
+		a{
+			border-bottom: 1px solid black;
+		}
+
+	}
+
+
+}//end of s4
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color: gray;
+	overflow: hidden;
+	font-family: $maven;
+opacity: 0.1;
+	.logoBTM{
+		width: 70px;
+		margin-top: 10px;
+		svg{
+			height: 50px;
+			width: 50px;
+			border: 5px solid black;
+		}
+		p{
+			color:white;
+			text-align: center;
+			margin-top: 5px;
+		}
+}
+.nItems{
+	margin-top: 10px;
+	width: 100%;
+
+	@media only screen and (max-width: 435px){
+		width: 95%;
+	}
+	li{
+		width: 80px;
+
+		 vertical-align: middle;
+
+		 &:nth-child(n+2){
+
+			 margin-left: 20px;
+		 }
+		 @media only screen and (max-width: 730px){
+			 width: 60px;
+			 &:nth-child(n+2){
+
+				 margin-left: 10px;
+			 }
+		 }
+		  @media only screen and (max-width: 525px){
+				width: 55px;
+
+				&:nth-child(n+2){
+
+ 				 margin-left: 5px;
+ 			 }
+			 &:nth-child(5){
+				 margin-right: 5px;
+			 }
+			}
+
+
+	}
+	p{
+		color: white;
+	}
+}
+.nSocial{
+	margin-top: 10px;
+	li{
+		&:nth-child(n+2){
+			margin-left: 10px;
+		}
+	}
+	img{
+		height: 40px;
+		width: 40px;
+		border-radius: 100%;
+		background-color: lightblue;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+.nLast{
+	color: white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 12px;
+	li{
+		&:nth-child(n+2){
+			margin-left: 30px;
+		}
+		@media only screen and (max-width: 399px){
+			&:nth-child(n+2){
+				margin-left: 10px;
+			}
+		}
+	}
+	a{
+
+		color: white;
+		p{
+			padding-bottom: 2px;
+			border-bottom: 1px solid white;
+
+		}
+	}
+}
+}//end of footer
