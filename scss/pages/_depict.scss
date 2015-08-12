@@ -420,6 +420,13 @@ body{
 							margin-left: 10px;
 						}
 					}
+					@media only screen and (max-width: 400px){
+						width: 50px;
+						font-size: 13px;
+						&:nth-child(n+2){
+							margin-left: 0;
+						}
+					}
 
 					&:hover{
 						cursor: pointer;
@@ -499,10 +506,11 @@ body{
 				  }
 
 				  div{
-				    border: 13px solid black;
+						border: 7px solid black;
 				    display: inline-block;
 				    vertical-align: middle;
 				    margin: 20px;
+
 				  }
 				  .ai1{
 				     height: 200px; width: 200px;
@@ -585,6 +593,11 @@ body{
 				      width:320px ;
 				      margin: 10px;
 				    }
+						@media only screen and (max-width: 380px){
+							height:120px ;
+							width:256px ;
+
+						}
 				  }
 				}
 				.depictE{
@@ -933,18 +946,32 @@ body{
 					@media only screen and (max-width:815px){
 						display: block !important;
 						width: 100% !important;
-						top: 400px;
+						top: 450px;
 						bottom: 0;
 						left:0 ;
 						right:0 ;
 
 					}
 
-					@media only screen and (max-height: 475px){
 
+					@media only screen and (max-height: 645px){
+						top: 550px;
+						border: 1px solid white;
 						h1{font-size: 20px;}
 						.mainP{font-size: 15px;}
 						.specs{font-size: 12px;}
+					}
+					@media only screen and (max-height: 570px){
+						top: 600px;
+						border: 1px solid lime;
+					}
+					@media only screen and (max-height: 570px){
+						top: 650px;
+						border: 1px solid lightblue;
+					}
+					@media only screen and (max-height: 399px){
+						top: 680px;
+						border: 1px solid tomato;
 					}
 					h1{
 						color: white;

@@ -1387,6 +1387,12 @@ body {
               vertical-align: bottom; }
               .s3 .exclusive .afterE .subNav p:nth-child(n+2) {
                 margin-left: 10px; } }
+          @media only screen and (max-width: 400px) {
+            .s3 .exclusive .afterE .subNav p {
+              width: 50px;
+              font-size: 13px; }
+              .s3 .exclusive .afterE .subNav p:nth-child(n+2) {
+                margin-left: 0; } }
           .s3 .exclusive .afterE .subNav p:hover {
             cursor: pointer; }
           .s3 .exclusive .afterE .subNav p:nth-child(n+2) {
@@ -1444,7 +1450,7 @@ body {
             display: block;
             width: 100%; } }
         .s3 .exclusive .afterE .chris .rightImg div {
-          border: 13px solid black;
+          border: 7px solid black;
           display: inline-block;
           vertical-align: middle;
           margin: 20px; }
@@ -1524,6 +1530,10 @@ body {
               height: 150px;
               width: 320px;
               margin: 10px; } }
+          @media only screen and (max-width: 380px) {
+            .s3 .exclusive .afterE .chris .rightImg .ai3 {
+              height: 120px;
+              width: 256px; } }
       .s3 .exclusive .afterE .chris .depictE {
         width: 100%; }
         .s3 .exclusive .afterE .chris .depictE h1 {
@@ -1809,17 +1819,32 @@ body {
             .s3 ul .li1 .after .textC {
               display: block !important;
               width: 100% !important;
-              top: 400px;
+              top: 450px;
               bottom: 0;
               left: 0;
               right: 0; } }
-          @media only screen and (max-height: 475px) {
-            .s3 ul .li1 .after .textC h1 {
-              font-size: 20px; }
-            .s3 ul .li1 .after .textC .mainP {
-              font-size: 15px; }
-            .s3 ul .li1 .after .textC .specs {
-              font-size: 12px; } }
+          @media only screen and (max-height: 645px) {
+            .s3 ul .li1 .after .textC {
+              top: 550px;
+              border: 1px solid white; }
+              .s3 ul .li1 .after .textC h1 {
+                font-size: 20px; }
+              .s3 ul .li1 .after .textC .mainP {
+                font-size: 15px; }
+              .s3 ul .li1 .after .textC .specs {
+                font-size: 12px; } }
+          @media only screen and (max-height: 570px) {
+            .s3 ul .li1 .after .textC {
+              top: 600px;
+              border: 1px solid lime; } }
+          @media only screen and (max-height: 570px) {
+            .s3 ul .li1 .after .textC {
+              top: 650px;
+              border: 1px solid lightblue; } }
+          @media only screen and (max-height: 399px) {
+            .s3 ul .li1 .after .textC {
+              top: 680px;
+              border: 1px solid tomato; } }
           .s3 ul .li1 .after .textC h1 {
             color: white;
             margin-left: 10%; }
