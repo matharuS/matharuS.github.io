@@ -369,7 +369,7 @@ body {
       @media only screen and (max-width: 840px), only screen and (max-height: 640px) {
         #home .portfolio img {
           height: 50%; } }
-      @media only screen and (max-width: 550px) {
+      @media only screen and (max-width: 575px) {
         #home .portfolio img {
           height: 200px; } }
       @media only screen and (max-width: 400px) {
@@ -430,14 +430,14 @@ body {
         #home .me .textC {
           width: 80%; } }
       #home .me .textC p {
-        color: #D3875B;
+        color: #D0D6A6;
         text-align: left;
         font-size: 20px; }
         @media only screen and (max-width: 850px) {
           #home .me .textC p {
             line-height: 1.5em; } }
       #home .me .textC span {
-        border-bottom: 1px solid #2F4447; }
+        border-bottom: 1px solid #D0D6A6; }
   #home .contact {
     height: 700px !important;
     background-color: transparent;
