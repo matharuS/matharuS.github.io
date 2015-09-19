@@ -103,10 +103,13 @@ body {
   #home .banner {
     overflow: hidden;
     background-color: #3F3536; }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 800px) {
       #home .banner {
         height: 600px !important; } }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 430px) {
+      #home .banner {
+        height: 630px !important; } }
+    @media only screen and (max-width: 800px) {
       #home .banner canvas {
         position: absolute;
         top: 0;
@@ -114,62 +117,28 @@ body {
         width: 100%;
         z-index: 0;
         height: 600px !important; } }
-    #home .banner .replacementDeer {
-      position: absolute;
-      height: 300px;
-      width: 300px;
-      display: none; }
-      @media only screen and (max-width: 815px) {
-        #home .banner .replacementDeer {
-          margin-left: auto;
-          margin-right: auto;
-          height: 200px;
-          width: 200px;
-          left: 0;
-          right: 0;
-          top: 50px; } }
-      @media only screen and (max-width: 700px) {
-        #home .banner .replacementDeer {
-          display: block;
-          position: relative;
-          margin: 0 auto 0 auto;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          height: 250px;
-          width: 250px; } }
-      @media only screen and (max-height: 475px) {
-        #home .banner .replacementDeer {
-          top: 0; } }
     #home .banner iframe {
       position: absolute;
       height: 100%;
       width: 50%;
       border: none; }
-      @media only screen and (max-width: 815px) {
-        #home .banner iframe {
-          margin-left: auto;
-          margin-right: auto;
-          height: 50%;
-          left: 0;
-          right: 0;
-          top: 50px;
-          width: 60%; } }
-      @media only screen and (max-width: 600px) {
-        #home .banner iframe {
-          display: block;
+    #home .banner .replacementDeer {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      display: none;
+      top: 0;
+      left: 5%;
+      bottom: 0;
+      right: 95%;
+      margin: auto; }
+      @media only screen and (max-width: 800px) {
+        #home .banner .replacementDeer {
           position: relative;
-          margin: 0 auto 0 auto;
-          top: 0;
           left: 0;
-          right: 0;
           bottom: 0;
-          height: 250px;
-          width: 250px; } }
-      @media only screen and (max-height: 475px) {
-        #home .banner iframe {
-          top: 0; } }
+          display: block;
+          margin: 0 auto; } }
     #home .banner .textCont {
       color: white;
       position: absolute;
@@ -178,30 +147,19 @@ body {
       right: 50%;
       bottom: 0;
       margin: auto;
-      width: 500px;
+      width: 400px;
       height: 200px; }
-      @media only screen and (max-width: 815px) {
+      @media only screen and (max-width: 800px) {
         #home .banner .textCont {
-          width: 400px;
-          margin-bottom: 0;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          bottom: 10%; } }
-      @media only screen and (max-width: 700px) {
-        #home .banner .textCont {
-          display: block;
           position: relative;
-          margin: 50px auto 0 auto;
-          top: 0;
           left: 0;
           right: 0;
-          bottom: 0; } }
-      @media only screen and (max-width: 405px) {
+          bottom: 0;
+          display: block;
+          margin: 30px auto 0 auto; } }
+      @media only screen and (max-width: 430px) {
         #home .banner .textCont {
-          width: 90%;
-          text-align: center; } }
+          width: 90%; } }
       #home .banner .textCont h1 {
         font-family: 'Megrim', Arial;
         font-size: 35px;
@@ -472,7 +430,7 @@ body {
         #home .me .textC {
           width: 80%; } }
       #home .me .textC p {
-        color: #374A67;
+        color: #D3875B;
         text-align: left;
         font-size: 20px; }
         @media only screen and (max-width: 850px) {
@@ -516,23 +474,23 @@ body {
         left: 0;
         text-align: center; }
       #home .contact #container form ::-webkit-input-placeholder {
-        color: black; }
+        color: white; }
       #home .contact #container form ::-moz-placeholder {
         /* Firefox 19+ */
-        color: black; }
+        color: white; }
       #home .contact #container form :-ms-input-placeholder {
-        color: black; }
+        color: white; }
       #home .contact #container form input {
         width: 35%;
-        border-bottom: 1px solid black;
-        border-top: 0 solid black;
-        border-left: 0 solid black;
-        border-right: 0 solid black;
+        border-bottom: 1px solid white;
+        border-top: 0 solid white;
+        border-left: 0 solid white;
+        border-right: 0 solid white;
         padding-left: 20px;
         margin: 30px 0 0 0;
         background-color: transparent;
         height: 50px;
-        color: black;
+        color: white;
         text-align: center;
         max-width: 500px; }
       #home .contact #container form input:nth-child(1) {
@@ -546,8 +504,8 @@ body {
         width: 50%;
         background-color: transparent;
         padding: 30px;
-        border: 1px solid black;
-        color: black;
+        border: 1px solid white;
+        color: white;
         display: block;
         margin: 30px auto 0 auto;
         max-width: 600px; }
@@ -654,13 +612,13 @@ body {
         background-repeat: no-repeat; }
 
 #responce div {
-  background-color: #A5FFC0;
+  background-color: #7DC192;
   height: 100%;
   width: 100%;
   position: relative; }
 #responce p {
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
+  color: white;
   position: absolute;
   text-align: center;
   height: 20px;

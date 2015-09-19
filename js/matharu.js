@@ -1,4 +1,36 @@
 $(document).ready(function(){
+  if($(window).innerWidth() < 950){
+    remove3D();
+    console.log('removed 3D')
+  } else if($(window).innerWidth() > 950){
+      add3D();
+      console.log('added 3D')
+  }
+
+  $(window).resize(function(){
+    if($(window).innerWidth() < 950){
+      remove3D();
+
+      console.log('removed 3D')
+    } else if($(window).innerWidth() > 950){
+        add3D();
+        console.log('added 3D')
+    }
+  })
+
+  function remove3D(){
+      $("#deerIframe").css('display', 'none');
+      $(".replacementDeer").css('display', 'block');
+      $("#birdsIframe").css('display', 'none');
+      $("#container").css('display', 'block');
+  }
+  function add3D(){
+    $("#deerIframe").css('display', 'block');
+    $(".replacementDeer").css('display', 'none');
+    $("#birdsIframe").css('display', 'block');
+    $("#container").css('display', 'none');
+  }
+
       /*  END about animations  */
 
       $(".banner").css({height:$(window).innerHeight()})
@@ -9,10 +41,28 @@ $(document).ready(function(){
       $(window).resize(function(){
           $(".designer").css({height:$(window).innerHeight()})
       });
+
+      $('#nav').on('mouseenter', function(){
+        $('#nav').css('border', '1px solid black');
+        $('.lineHold').css('border-top', '1px solid black');
+        $('.lineHold').css('border-right', '1px solid black');
+      })
+      $('#nav').on('mouseleave', function(){
+        $('#nav').css('border', 'none');
+        $('.lineHold').css('border-top', 'none');
+        $('.lineHold').css('border-right', 'none');
+      })
+
+
       $('#nav').on('click', function(){
+        $('.lineHold').on('mouseenter', function(){
+          $('.lineHold').css('cursor', 'pointer');
+        })
+
         open();
         return false;
       });
+
       $('.lineHold').on('click', function(){
         close();
         return false;
