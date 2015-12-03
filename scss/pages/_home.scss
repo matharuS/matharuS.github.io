@@ -194,7 +194,7 @@
     overflow: hidden;
     height: auto;
     width: 100%;
-    background-color: #CE5858;
+    background-color: #CC7178 ;
     p{
       font-family: 'Dosis', sans-serif;
     }
@@ -363,62 +363,34 @@
 
   }
 /*==================================================================================PORTFOLIO*/
+
   .portfolio{
     z-index: 200;
-    height: 100%;
+    height: suto;
     width: 100%;
     position: relative;
     background-color: #346E7E;
     overflow: hidden;
-      @media only screen and (max-width: 550px){
-        height:450px;
-      }
+
     h1{
       color: white;
       text-align: center;
-      margin-top: 6%;
-      //font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-top: 40px;
       font-family: 'Dosis', sans-serif;
       i{
         font-size: 22px;
       }
-      @media only screen and (max-width: 420px){
-        font-size: 25px;
-        i{
-          font-size: 19px;
-        }
-      }
-      @media only screen and (min-width: 1500px){
-        margin-top: 40px;
-      }
+
     }
     img{
-      position: absolute;
-      bottom: 2%;
-      top: 7%;
-      left: 0;
-      right: 0;
-      margin: auto;
-      height: 70%;
+      height: auto;
+      width: 70%;
+      display: block;
+      margin: 0 auto 40px auto;
 
-
-      @media only screen and (max-width: 840px), only screen and (max-height: 640px){
-        height: 50%;
-      }
-      @media only screen and (max-width: 575px){
-        height: 200px;
-      }
-      @media only screen and (max-width: 400px){
-        height: 150px;
-      }
-
-      @media only screen and (min-width: 1500px){
-        height:540px;
-        width: 900px;
-
-      }
     }
-  }//portfolio end
+
+  }
 /*==================================================================================ME*/
 .me{
   height: 500px;
@@ -514,7 +486,7 @@
   }
   #container{
     display:none;
-    color: #808080;
+    color: #808080 !important;
 
     font-size:12px;
     text-align:center;
