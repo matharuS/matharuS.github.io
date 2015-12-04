@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-  $('.gallery').flickity({});
+  $('.gallery').flickity({
+
+    imagesLoaded: true,
+
+  });
 
   if($(window).innerWidth() < 950){
     remove3D();
