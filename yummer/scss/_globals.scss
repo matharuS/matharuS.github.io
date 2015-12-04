@@ -1,0 +1,260 @@
+*{
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box !important;
+}
+
+.cntr{
+  display: block;
+  margin: 0 auto;
+}
+
+.crcl{
+  border-radius: 100%;
+}
+
+.ul{
+  text-align: center;
+}
+
+.li{
+  display: inline-block;
+}
+html,
+body{
+	height: 100%;
+	min-height: 100%;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+}
+
+/*
+*    Content::: start
+*/
+body{
+background-color: #39243F;
+}
+.interpretation {
+  z-index: 10000;
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 1px solid #D8C08A;
+  font-family: 'Roboto Slab', serif;
+   .content {
+    display: none;
+    padding: 20px;
+    p{
+      color: #D8C08A;
+    }
+  }
+   a {
+    color: #D8C08A;
+    border-bottom: 1px solid #D8C08A; }
+   button {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: #D8C08A;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+     button:hover {
+      cursor: pointer;
+    }
+}
+.s1{
+  background-image: url('../img/food2.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden !important;
+   position: fixed;
+   top:0;
+   right:0;
+   left:0;
+   bottom:0;
+   margin: auto;
+   .content{
+     height: 100%;
+     width: 100%;
+     overflow: scroll;
+     position: relative;
+   }
+   .logo{
+      display: block;
+      margin: 100px auto 0 auto;
+     .yummer{
+       color: white;
+       font-size: 130px;
+       text-align: center;
+       margin: 0;
+       font-weight: normal;
+       font-family: 'Vibur', sans-serif;
+       @media only screen and (max-width: 500px){
+         font-size: 100px;
+       }
+     }
+   }//end .logo
+   .introWords{
+     display: block;
+     margin: 50px auto 0 auto;
+     width: 80%;
+     p{
+       color: white;
+       margin-top: 10px;
+       font-size: 20px;
+       text-align: center;
+       font-family: 'Roboto Slab', serif;
+     }
+   }//end .introWords
+   .launch{
+     display: block;
+     margin: 40px auto 0 auto;
+     width: 100%;
+     .counter{
+       display: block;
+       margin: 0px auto 0 auto;
+       height: 250px;
+       width: 100%;
+       @media only screen and (max-width: 760px){
+        .li{}
+        .big{font-size: 40px !important; }
+       }
+       @media only screen and (max-width: 650px){
+        .li{padding: 10px !important;}
+        .big{font-size: 40px !important; }
+       }
+       .ul{
+         padding-top: 35px;
+       }
+       .li{
+         height:auto;
+         width:auto;
+         padding: 20px;
+        p{
+          color: white;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+        }
+         .big{
+           color: #F4D35E;
+            font-size: 60px;
+            padding: 20px;
+            font-family: 'Megrim', cursive;
+         }
+         .small{
+           font-size: 17px;
+           letter-spacing: 3px;
+            font-family: 'Megrim', cursive;
+         }
+       }
+     }
+   }//end .launch
+   form {
+     border: 1px solid transparent;
+     width: 50%;
+     padding: 0;
+     position: relative;
+     margin-top: 40px;
+     @media only screen and (max-width: 750px) {
+         width: 75% !important;
+     }
+     @media only screen and (max-width: 532px) {
+        margin-top: 70px !important;
+     }
+      #name,
+      #email,
+      #subject,
+      #message {
+       background-color: transparent;
+       border: 2px solid #D8C08A;
+       padding: 20px;
+       color: lightblue;
+       &:focus{
+         outline: 0;
+       }
+     }
+      #name,
+      #email {
+       height: 50px;
+       position: absolute;
+       width: 50%;
+       border-bottom: none;
+     }
+      #name {
+       top: 0;
+       left: 0;
+     }
+      #email {
+       top: 0;
+       right: 0;
+       border-left: none;
+     }
+
+      #subject {
+       height: 50px;
+       display: block;
+       margin: 50px auto 0 auto;
+       width: 100%;
+       border-bottom: none;
+     }
+      #message {
+       width: 100%;
+       height: 300px;
+     }
+      button {
+       height: 60px;
+       width: 150px;
+       border: 2px solid #3E92CC;
+       background-color: transparent;
+       color: #3E92CC;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       margin: 20px auto 40px auto;
+       &:focus{
+         outline: 0;
+       }
+     }
+      ::-webkit-input-placeholder {
+       color: #D8C08A; }
+      :-moz-placeholder {
+       /* Firefox 18- */
+       color: #D8C08A; }
+      ::-moz-placeholder {
+       /* Firefox 19+ */
+       color: #D8C08A; }
+      :-ms-input-placeholder {
+       color: #D8C08A; }
+  }//end form
+
+  footer{
+    display: block;
+    height:50px;
+    background-color: #39243F;
+
+    p{
+      text-align: center;
+      color: #6E457A;
+      padding:15px;
+    }
+  }//end footer
+}//end .s1

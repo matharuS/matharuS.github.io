@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  $('.gallery').flickity({});
+
   if($(window).innerWidth() < 950){
     remove3D();
     console.log('removed 3D')

@@ -70,6 +70,19 @@ body {
   /*==================================================================================BANNER*/
   /*==================================================================================DEVELOPER*/
   /*==================================================================================PORTFOLIO*/
+  /*
+    .portfolio{
+      z-index: 200;
+      height: auto;
+      width: 100%;
+      position: relative;
+      background-color: #346E7E;
+      overflow: hidden;
+  
+  
+  
+    }//end .portfolio
+    */
   /*==================================================================================ME*/
   /*==================================================================================CONTACT*/
   /*==================================================================================FOOTER*/
@@ -335,23 +348,77 @@ body {
             margin-left: 25%; } }
   #home .portfolio {
     z-index: 200;
-    height: suto;
+    height: auto;
     width: 100%;
     position: relative;
     background-color: #346E7E;
-    overflow: hidden; }
-    #home .portfolio h1 {
-      color: white;
-      text-align: center;
-      margin-top: 40px;
-      font-family: 'Dosis', sans-serif; }
-      #home .portfolio h1 i {
-        font-size: 22px; }
-    #home .portfolio img {
-      height: auto;
-      width: 70%;
+    overflow: hidden;
+    /* arrow color */
+    /* position outside */ }
+    #home .portfolio .gallery {
       display: block;
-      margin: 0 auto 40px auto; }
+      margin: 0 auto;
+      height: 90%;
+      width: 100%;
+      border: 1px solid transparent; }
+    #home .portfolio .gallery-cell {
+      height: auto;
+      width: auto;
+      counter-increment: gallery-cell;
+      margin-right: 200px; }
+      #home .portfolio .gallery-cell h1 {
+        color: white;
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'Dosis', sans-serif; }
+        #home .portfolio .gallery-cell h1 i {
+          font-size: 22px; }
+      #home .portfolio .gallery-cell img {
+        height: 500px;
+        width: auto;
+        display: block;
+        margin: 0 auto 40px auto; }
+        @media only screen and (max-width: 950px) {
+          #home .portfolio .gallery-cell img {
+            height: 400px; } }
+        @media only screen and (max-width: 760px) {
+          #home .portfolio .gallery-cell img {
+            height: 300px; } }
+        @media only screen and (max-width: 570px) {
+          #home .portfolio .gallery-cell img {
+            height: 200px; } }
+        @media only screen and (max-width: 400px) {
+          #home .portfolio .gallery-cell img {
+            height: 150px; } }
+    #home .portfolio .flickity-prev-next-button {
+      width: 30px;
+      height: 30px;
+      border-radius: none;
+      border: none;
+      background-color: transparent;
+      position: absolute; }
+    #home .portfolio .flickity-prev-next-button:hover {
+      background: none; }
+    #home .portfolio .flickity-prev-next-button .arrow {
+      fill: white; }
+    #home .portfolio .flickity-prev-next-button.no-svg {
+      color: white; }
+    #home .portfolio .flickity-prev-next-button.previous {
+      top: 0;
+      left: 50px;
+      bottom: 0;
+      margin: auto; }
+      @media only screen and (max-width: 670px) {
+        #home .portfolio .flickity-prev-next-button.previous {
+          left: 20px; } }
+    #home .portfolio .flickity-prev-next-button.next {
+      top: 0;
+      right: 50px;
+      bottom: 0;
+      margin: auto; }
+      @media only screen and (max-width: 670px) {
+        #home .portfolio .flickity-prev-next-button.next {
+          right: 20px; } }
   #home .me {
     height: 500px;
     background-color: #374A67;

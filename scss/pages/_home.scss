@@ -363,34 +363,115 @@
 
   }
 /*==================================================================================PORTFOLIO*/
-
+/*
   .portfolio{
     z-index: 200;
-    height: suto;
+    height: auto;
     width: 100%;
     position: relative;
     background-color: #346E7E;
     overflow: hidden;
 
-    h1{
-      color: white;
-      text-align: center;
-      margin-top: 40px;
-      font-family: 'Dosis', sans-serif;
-      i{
-        font-size: 22px;
+
+
+  }//end .portfolio
+  */
+  .portfolio{
+    z-index: 200;
+    height:auto;
+    width: 100%;
+    position: relative;
+    background-color: #346E7E;
+    overflow: hidden;
+
+    .gallery{
+      display: block;
+      margin: 0 auto;
+      height: 90%;
+      width: 100%;
+      border: 1px solid transparent;
+
+    }
+
+    .gallery-cell{
+      height: auto;
+      width: auto;
+      counter-increment: gallery-cell;
+      margin-right: 200px;
+      h1{
+        color: white;
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'Dosis', sans-serif;
+        i{
+          font-size: 22px;
+        }
+      }
+      img{
+        //height: auto;
+        //width: 70%;
+        height: 500px;
+        width: auto;
+        display: block;
+        margin: 0 auto 40px auto;
+        @media only screen and (max-width: 950px){
+          height: 400px;
+        }
+        @media only screen and (max-width: 760px){
+          height: 300px;
+        }
+        @media only screen and (max-width: 570px){
+          height: 200px;
+        }
+        @media only screen and (max-width: 400px){
+          height: 150px;
+        }
+
       }
 
-    }
-    img{
-      height: auto;
-      width: 70%;
-      display: block;
-      margin: 0 auto 40px auto;
 
-    }
+    }//end gallery-cell
 
-  }
+    .flickity-prev-next-button {
+      width: 30px;
+      height: 30px;
+      //border-radius: 5px;
+      border-radius: none;
+      border: none;
+      //background: #333;
+      background-color: transparent;
+      position: absolute;
+    }
+    .flickity-prev-next-button:hover {
+      background: none;
+    }
+    /* arrow color */
+    .flickity-prev-next-button .arrow {
+      fill: white;
+    }
+    .flickity-prev-next-button.no-svg {
+      color: white;
+    }
+    /* position outside */
+    .flickity-prev-next-button.previous {
+      top:0;
+      left:50px;
+      bottom:0;
+      margin: auto;
+      @media only screen and (max-width: 670px){
+        left:20px;
+      }
+    }
+    .flickity-prev-next-button.next {
+      top:0;
+      right:50px;
+      bottom:0;
+      margin: auto;
+      @media only screen and (max-width: 670px){
+        right: 20px;
+      }
+    }
+  }//end portfolio
 /*==================================================================================ME*/
 .me{
   height: 500px;
