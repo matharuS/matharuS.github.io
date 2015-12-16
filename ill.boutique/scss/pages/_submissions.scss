@@ -1,0 +1,131 @@
+#shell{
+  -webkit-overflow-scrolling: touch !important;
+}
+#submissions{
+  background-image: url(../img/gradient/lightDark.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden !important;
+
+
+  .submissions{
+    color: white;
+    font-family: $mono;
+    color: #81E979;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .textCont{
+    color: #C9B0CB;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: $mono;
+    //font-family: monospace;
+    li{
+      list-style-type: circle;
+      margin-top: 20px;
+    }
+    p{
+      text-align: left;
+      margin-top: 5px;
+      line-height: 1.0em;
+    }
+  }
+  form{
+    @media only screen and (max-width:750px){
+      width: 75%;
+    }
+    @media only screen and (max-width:550px){
+      width: 90%;
+    }
+    border: 1px solid transparent;
+    width: 50%;
+    padding: 0;
+    position: relative;
+    font-family: $mono;
+
+
+
+    #name,
+    #email,
+    #subject,
+    #website,
+    #message{
+      background-color:transparent;
+      border: 1px solid black;
+      padding: 20px;
+      color: lightblue;
+      &:focus{
+        outline: 0;
+        border: double;
+      }
+    }
+
+    #name,
+    #email{
+      height: 50px;
+      position: absolute;
+      width: 50%;
+      border-bottom: none;
+    }
+    #name{
+      top: 0;
+      left:0;
+    }
+    #email{
+      top:0;
+      right:0;
+      border-left: none;
+    }
+    #website{
+      height: 50px;
+      display: block;
+      margin: 50px auto 0 auto;
+      width: 100%;
+      border-bottom: none;
+
+    }
+    #subject{
+      height: 50px;
+      display: block;
+      margin: 0 auto 0 auto;
+      width: 100%;
+      border-bottom: none;
+    }
+    #message{
+      width: 100%;
+      height: 300px;
+    }
+    button{
+      height: 60px;
+      width: 150px;
+      //border: 1px solid $bottomBlue !important;
+      border: 1px solid #3E92CC;
+      //background-color: $bottomBlue;
+      background-color: transparent;
+      //color: $bottomBlue;
+      color: #3E92CC;
+
+      margin: 20px  auto;
+
+    }
+
+    ::-webkit-input-placeholder {
+       color: #E8B4BC;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: #E8B4BC;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: #E8B4BC;
+    }
+
+    :-ms-input-placeholder {
+       color: #E8B4BC;
+    }
+  }//end form
+}//end #submissions
