@@ -123,6 +123,9 @@ $('.exit').on('mouseleave', function(){
 $('.sortOptions .sort').on('click', function(){
   $('#Container').velocity("scroll", {container: $('#shell'), duration: 600, offset:-250})
 })
+$('.businessOptions input').on('click', function(){
+  $('#Container').velocity("scroll", {container: $('#shell'), duration: 600, offset:-250})
+})
 
 var itemImg = document.getElementsByClassName("itemImg");
    for(var i=0;i<itemImg.length;i++){
