@@ -694,7 +694,21 @@ footer{
   height: auto;
   background-color: #132C3D;
   overflow: hidden;
-  img{
+  .ul{
+    .li{
+      margin-top: 30px !important;
+      vertical-align: middle;
+      &:nth-child(2){
+        margin: 0 20px;
+      }
+      a{}
+      img{
+        height: 40px;
+        width: 40px;
+      };
+    }
+  }
+  .footerLogo{
     height: 50px;
     width: 50px;
     margin-top: 10px !important;
@@ -703,10 +717,10 @@ footer{
     color: white;
     font-family: $mono;
     text-align: center;
-    margin: 10px 0 !important;
+    margin: 10px 0  30px 0!important;
     font-size: 13px;
   }
-  img,
+  .footerLogo,
   p{
     display: block;
     margin: 0 auto;
