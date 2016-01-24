@@ -81,12 +81,6 @@ body {
     color: white;
     font-family: "Anonymous Pro", monospace; }
     .menu .menuUlLinks li .forCentering {
-      /*
-      position: relative;
-      top:50%;
-      transform:translateY(-50%);
-      opacity:0;
-      */
       position: absolute;
       top: 0;
       right: 0;
@@ -291,7 +285,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover; }
   .portfolioWebsites .flex3 {
-    background-image: url("../img/KonozC2.png");
+    background-image: url("../img/konozC2.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -331,12 +325,7 @@ body {
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: "Anonymous Pro", monospace;
-    /*
-        @media only screen and (max-width: 835px){
-          left:2%;
-        }
-        */ }
+    font-family: "Anonymous Pro", monospace; }
   .portfolioAnimations .animationItem {
     height: 300px;
     width: 300px;
@@ -451,26 +440,7 @@ body {
   background-image: url("../img/45.JPG");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  /*
-  @media only screen and (max-width: 645px){
-    height: 600px !important;
-    form,
-    .aboutWords{
-      width: 500px !important;
-    }
-  }//end 645px
-  @media only screen and (max-width: 550px){
-    height: 600px !important;
-    form,
-    .aboutWords{
-      width: 500px !important;
-    }
-    .aboutWords{
-      font-size: 14px;
-    }
-  }//end 550px
-  */ }
+  background-size: cover; }
   @media only screen and (max-width: 1150px) {
     .aboutContact {
       height: 600px !important; }
@@ -520,17 +490,7 @@ body {
     position: absolute;
     top: 30px;
     left: 30px;
-    width: 40%;
-    /*
-    @media only screen and (max-height: 610px){
-      color: tomato;
-      font-size: 14px;
-    }
-    @media only screen and (max-height: 575px){
-      color: tomato;
-      font-size: 14px;
-    }
-    */ }
+    width: 40%; }
     .aboutContact .aboutWords p:nth-child(n+2) {
       margin-top: 10px; }
   .aboutContact form {
@@ -612,7 +572,8 @@ footer {
     color: white;
     font-family: "Anonymous Pro", monospace;
     text-align: center;
-    margin: 10px 0 !important; }
+    margin: 10px 0 !important;
+    font-size: 13px; }
   footer img,
   footer p {
     display: block;
