@@ -7,10 +7,12 @@ $(document).ready(function(){
   });
 
 
-
+/*
+//animation for lesson page
 (function(){
   $('.holdLine').velocity({width:'1px'},{duration:700,loop:true, easing:"easeInOutCirc"})
 })();
+*/
 
   //arrow slide to portfolio
   $('.menuPortfolio').on('click', function(){
@@ -60,7 +62,7 @@ $(document).ready(function(){
         $('.menuAnimation').velocity({translateX:'0'},{duration:600, delay:0, easing:"easeInOutQuart"})
         $('.menuTutorial').velocity({translateX:'0'},{duration:600, delay:50, easing:"easeInOutQuart"})
         $('.menuAbout').velocity({translateX:'0'},{duration:600, delay:50, easing:"easeInOutQuart"})
-        $('.menuUlLinks .li .forCentering').velocity("transition.flipYIn",{duration:1000, delay:800, easing:"easeInOutQuart"})
+        //$('.menuUlLinks .li .forCentering').velocity("transition.flipYIn",{duration:1000, delay:800, easing:"easeInOutQuart"})
         console.log('menu was actived')
       }
       function menuClose(){
@@ -68,7 +70,7 @@ $(document).ready(function(){
         $('.l1').velocity({rotateZ:'0', translateY:'0',translateX:'0'},{duration:500, delay:0})
         $('.l3').velocity({rotateZ:'0', translateY:'0',translateX:'0'},{duration:500, delay:0})
 
-        $('.menuUlLinks .li .forCentering').velocity({opacity:'0'},{duration:1000, delay:0, easing:"easeInOutQuart"})
+        //$('.menuUlLinks .li .forCentering').velocity({opacity:'0'},{duration:1000, delay:0, easing:"easeInOutQuart"})
 
         $('.logo').velocity({opacity:'1'},{duration: 600, delay:0})
 
