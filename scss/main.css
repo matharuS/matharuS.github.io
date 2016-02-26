@@ -235,7 +235,8 @@ body {
       line-height: 1.5em; }
 
 .portfolioWebsites {
-  background-color: #CC7178; }
+  background-color: #CC7178;
+  height: auto !important; }
   .portfolioWebsites .longText {
     color: white;
     width: 20px;
@@ -245,7 +246,7 @@ body {
     bottom: 0;
     left: 1.8%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     text-transform: uppercase;
     font-family: "Anonymous Pro", monospace; }
@@ -255,65 +256,42 @@ body {
     @media only screen and (max-width: 790px) {
       .portfolioWebsites .longText {
         left: 0.8%; } }
-  .portfolioWebsites .flexHold {
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    margin: 0 !important;
-    padding: 0 5%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
+  .portfolioWebsites .sites {
+    width: auto;
+    height: auto;
+    overflow-y: scroll;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-bottom: 50px; }
+    .portfolioWebsites .sites .li {
+      height: auto;
+      width: auto;
+      margin-top: 30px; }
+      .portfolioWebsites .sites .li:nth-last-child {
+        margin-bottom: 100px; }
+      @media only screen and (max-width: 925px) {
+        .portfolioWebsites .sites .li {
+          display: block !important; } }
+      .portfolioWebsites .sites .li img {
+        height: 250px;
+        width: auto; }
+        @media only screen and (max-width: 1111px) {
+          .portfolioWebsites .sites .li img {
+            height: 200px; } }
+        @media only screen and (max-width: 525px) {
+          .portfolioWebsites .sites .li img {
+            height: 150px; } }
+        @media only screen and (max-width: 401px) {
+          .portfolioWebsites .sites .li img {
+            height: 125px; } }
+    .portfolioWebsites .sites .tempVar {
+      background-image: url("../img/combo.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
   @media only screen and (max-width: 1000px) {
     .portfolioWebsites .longText {
-      left: 4% !important; }
-    .portfolioWebsites .flexHold {
-      padding: 0 10% !important; }
-    .portfolioWebsites .item {
-      height: 80% !important; } }
-  .portfolioWebsites .item {
-    flex: 1;
-    width: 85%;
-    height: 90%;
-    margin: 0;
-    padding: 5% 0;
-    transition: 500ms; }
-    .portfolioWebsites .item:hover {
-      flex-grow: 10;
-      transition: 0.6s;
-      transition-timing-function: ease-in-out; }
-  .portfolioWebsites .flex1 {
-    background-image: url("../img/illC2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .portfolioWebsites .flex2 {
-    background-image: url("../img/yummerC2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .portfolioWebsites .flex3 {
-    background-image: url("../img/konozC2.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+      left: 4% !important; } }
 
 .portfolioAnimations {
   background-color: #494473;
@@ -347,7 +325,7 @@ body {
     bottom: 0;
     left: 5%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     text-transform: uppercase;
     font-family: "Anonymous Pro", monospace; }
