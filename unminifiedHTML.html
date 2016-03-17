@@ -107,24 +107,98 @@
             </a>
         </div>
     </section>
-    <!-- <section class="lessons side"> <div class="hold"> <a href="#"> <p>Less0ns</p><p>&amp</p><p>Tutorials</p></a> </div><div class="holdLine"> </div></section> -->
-    <section class="aboutContact side">
-        <div class="aboutWords">
-            <p>My name is Sajaan Matharu and I am an independent creator specializing in the design &amp development of beautiful, modern &amp functional websites.</p>
-            <p>I love working on projects of all types and sizes. From e-commerce, to personal blogs &amp product landing pages. I gaurantee to build you a beautiful website that caputures everything you need &amp more.</p>
-            <p>Feel free to contact me about any questions you may have. From a quote to a general inquiry, I promise to get back in touch.</p>
+    <section class="services">
+      <h1 class="title">services</h1>
+      <div class="hold">
+        <div class="holdItem">
+          <img src="img/animat-responsive-color.gif"><p>Web Design</p>
         </div>
-        <form action="http://formspree.io/sajaan.matharu@gmail.com" method="POST">
-            <input name="name" type="text" id="name" placeholder="Name" Required/>
-            <input name="email" type="email" id="email" placeholder="Email" Required/>
-            <input name="subject" type="subject" id="subject" placeholder="Subject" />
-            <input type="hidden" name="_next" value="responce.html" />
-            <input type="text" name="_gotcha" style="display:none;" />
-            <label for="message"></label>
-            <textarea class="cntr" id="message" name="message" placeholder="Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="holdItem">
+          <img src="img/animat-lightbulb-color.gif"><p>Graphic Design</p>
+        </div>
+        <div class="holdItem">
+          <img src="img/animat-rocket-color.gif"><p>Brand Design</p>
+        </div>
+        <div class="holdItem">
+          <img src="img/animat-pencil-color.gif"><p>Hand Built</p>
+        </div>
+        <div class="holdItem">
+          <img src="img/animat-diamond-color.gif"><p>Consulting</p>
+        </div>
+      </div>
+
     </section>
+    <!-- <section class="lessons side"> <div class="hold"> <a href="#"> <p>Less0ns</p><p>&amp</p><p>Tutorials</p></a> </div><div class="holdLine"> </div></section> -->
+    <section class="estimate">
+      <div class="words">
+          <p>My name is Sajaan Matharu and I am an independent creator specializing in the design &amp development of beautiful, modern &amp functional websites.</p>
+          <p>I love working on projects of all types and sizes. From e-commerce, to personal blogs &amp product landing pages. I gaurantee to build you a beautiful website that caputures everything you need &amp more.</p>
+          <p>Feel free to contact me about any questions you may have. From a quote to a general inquiry, I promise to get back in touch.</p>
+      </div>
+      <div class="scrollme">
+        <form action="http://formspree.io/sajaan.matharu@gmail.com" method="POST">
+            <input class="animateme" name="name" type="text" id="name" placeholder="Name" Required data-when="enter" data-from="0.6" data-to="0.3"  data-opacity="0" data-translatex="-300" data-translatey="-300" data-easing="linear" />
+            <input class="animateme" name="email" type="email" id="email" placeholder="Email" Required data-when="enter" data-from="0.6" data-to="0.3"  data-opacity="0" data-translatex="300" data-translatey="-300" data-easing="linear" />
+              <div></div>
+            <fieldset class="timeline animateme" data-when="enter" data-from="0.6" data-to="0.3"  data-opacity="0" data-translatex="-200" data-translatey="-200" data-easing="linear" >
+              <p>Estimated Timeline <span>&#8609</span></p>
+              <div class="itemWrap">
+                <div class="checkbox">
+                  <input name="1week" type="checkbox"/>
+                  <label>1 Week</label>
+                </div>
+                <div class="checkbox">
+                  <input name="1month" type="checkbox"/>
+                  <label>1 Months</label>
+                </div>
+                <div class="checkbox">
+                  <input name="2monthOrMore" type="checkbox"/>
+                  <label>2 Months or more</label>
+                </div>
+                <div class="checkbox">
+                  <input name="NotSureOrOngoing" type="checkbox"/>
+                  <label>Not Sure / Ongoing</label>
+                </div>
+                <div class="checkbox">
+                  <input name="NotSureOrOngoing" type="checkbox"/>
+                  <label>None</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="budget animateme" data-when="enter" data-from="0.6" data-to="0.3"  data-opacity="0" data-translatex="200" data-translatey="-200" data-easing="linear" >
+              <p>Budget <span>&#8609</span></p>
+              <div class="itemWrap">
+                <div class="checkbox">
+                  <input name="1-2k" type="checkbox"/>
+                  <label>$1000 - $2000</label>
+                </div>
+                <div class="checkbox">
+                  <input name="2-3k" type="checkbox"/>
+                  <label>$2000 - $3000</label>
+                </div>
+                <div class="checkbox">
+                  <input name="3-5k" type="checkbox"/>
+                  <label>$3000 - $5000</label>
+                </div>
+                <div class="checkbox">
+                  <input name="5k+" type="checkbox"/>
+                  <label>$5000+</label>
+                </div>
+                <div name="NotSureOrOngoing" class="checkbox">
+                  <input type="checkbox"/>
+                  <label>None</label>
+                </div>
+              </div>
+            </fieldset>
+            <input class="animateme" type="hidden" name="_next" value="responce.html" />
+            <input class="animateme" type="text" name="_gotcha" style="display:none;" />
+            <label for="message"></label>
+            <textarea class="animateme" class="cntr" id="message" name="message" placeholder="Message" required data-when="enter" data-from="0.6" data-to="0.3"  data-opacity="0" data-translatey="200" data-easing="linear" ></textarea>
+            <button type="submit" data-when="enter" data-from="0.6" data-to="0.3"  data-opacity="0" data-translatey="200" data-easing="linear" >Submit</button>
+        </form>
+      </div>
+    </section>
+
     <footer>
         <ul class="ul">
             <li class="li">
@@ -143,20 +217,20 @@
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/velocity_and_ui.min.js"></script>
 <script type="text/javascript" src="js/tiltfx.js"></script>
+<script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-64303663-1', 'auto');
-    ga('send', 'pageview');
+  (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-64303663-1', 'auto');
+  ga('send', 'pageview');
 </script>
-
 </html>

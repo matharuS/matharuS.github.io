@@ -82,4 +82,53 @@ $(document).ready(function(){
         console.log('menu close was activated')
       }
     ///////////////// mainMenu END /////////////////
-})
+/*
+    var menuCounter = 1;
+    $('.lineHold').on("click", function(){
+      menuCounter++;
+        if(menuCounter%2=== 0){
+          menuOpen();
+         }else if(menuCounter%2===1){
+          menuClose();
+        }
+    })
+    */
+
+    timelineSpin = 1;
+    $('.timeline').on('click', function(){
+       timelineSpin++;
+      if(timelineSpin%2=== 0){
+        timelineSpinOpen();
+       }else if(timelineSpin%2===1){
+        timelineSpinClose();
+      }
+    })
+
+    budgetSpin = 1;
+    $('.budget').on('click', function(){
+       budgetSpin++;
+      if(budgetSpin%2=== 0){
+        budgetSpinOpen();
+       }else if(budgetSpin%2===1){
+        budgetSpinClose();
+      }
+    })
+    function timelineSpinOpen(){
+        $('.timeline span').velocity({rotateZ:'180deg'},{duration:500, delay:0})
+        $('.timeline .itemWrap').velocity("transition.slideDownIn",{duration:700, delay:0, easing: "slow"})
+    }
+
+    function timelineSpinClose(){
+        $('.timeline p span').velocity({rotateZ:'0'},{duration:500, delay:0})
+        $('.timeline .itemWrap').velocity("transition.slideUpOut",{duration:700, delay:0, easing: "slow"})
+    }
+    function budgetSpinOpen(){
+      $('.budget p span').velocity({rotateZ:'180deg'},{duration:500, delay:0})
+      $('.budget .itemWrap').velocity("transition.slideDownIn",{duration:700, delay:0, easing: "slow"})
+    }
+    function budgetSpinClose(){
+      $('.budget p span').velocity({rotateZ:'0'},{duration:500, delay:0})
+      $('.budget .itemWrap').velocity("transition.slideUpOut",{duration:700, delay:0, easing: "slow"})
+    }
+
+})//end jquery

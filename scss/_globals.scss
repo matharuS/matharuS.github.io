@@ -293,7 +293,7 @@ background: url('../img/main.jpeg') no-repeat center center !important;
   }//end text
 }
 .portfolioWebsites{
-  background-color: #CC7178;
+  background-color: $websitesRed;
   height: auto !important;
 
   .longText{
@@ -371,8 +371,9 @@ background: url('../img/main.jpeg') no-repeat center center !important;
 
 
 }//end .portfolioWebsites
+
 .portfolioAnimations{
-  background-color: #494473;
+  background-color: $animationsPurple;
   overflow-y: scroll !important;
   .animationItemHolder{
     height: 100%;
@@ -538,109 +539,285 @@ background: url('../img/main.jpeg') no-repeat center center !important;
     letter-spacing: 3px;
   }
 }//end lessons
-.aboutContact{
+
+.services{
+  height:100%;
+  width:100%;
+  background-color: $servicesGreen;
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1000px){
+    .holdItem{
+      //border: 1px solid black;
+      &:nth-child(-n+4){
+        //background-color: white;
+        margin-right: 15px;
+      }
+    }
+    img{
+      height: 100px !important;
+      width: 100px !important;
+    }
+  }//end 1000px
+  @media only screen and (max-width: 800px){
+    min-height: 500px !important;
+
+    .hold{
+      bottom:100px;
+      width: 80% !important;
+      display: block !important;
+      margin: 100px auto 0 auto !important;
+      position: relative !important;
+    }
+    .holdItem{
+      &:nth-child(-n+4){
+        margin-right: 15px;
+      }
+    }
+    img{
+      height: 100px !important;
+      width: 100px !important;
+    }
+  }//end 800px
+  @media only screen and (max-width: 433px){
+    .hold{
+      margin-top: 20px !important;
+    }
+  }//end 433px
+
+
+  .title{
+    text-align: center;
+    width: 100%;
+    font-family: $mono;
+    //letter-spacing: 3px;
+  }
+
+  .hold{
+    height: 200px;
+    width: 100%;
+  //  border: 1px solid tomato;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    text-align: center;
+  }
+  .holdItem{
+    display: inline-block;
+    vertical-align: top;
+    img{
+      height: 150px;
+      width: 150px;
+      border-radius: 100%;
+      //border: 1px solid black;
+    }
+    p{
+      text-align: center;
+      color: black;
+      margin-top: 10px;
+      font-family: $mono;
+    }
+  }
+
+}//end .service
+
+.estimate{
+  height:700px;
+  width: 100%;
+  overflow: hidden;;
+  //background-color: $estimateBlueGray;
   background-image: url("../img/45.JPG");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media only screen and (max-width: 1150px){
-    height: 600px !important;
-    .aboutWords{
-      width: 50% !important;
+  position: relative;
+
+  .words{
+    color: white;
+    font-family:$mono;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 50px;
+    p{
+      margin-top: 5px;
     }
+  }//end .words
+
+  @media only screen and (max-width: 1140px){
     form{
       width: 50% !important;
     }
-  }//end 1150px
+  }//end 1140px
 
-  @media only screen and (max-width: 1090px){
-    .aboutWords,
-      form{
-        width: 60% !important;
-      }
-  }//end 1090px
+  @media only screen and (max-width: 900px){
+    form{
+      width: 70% !important;
+      bottom:0 !important;
+      left:0 !important;
+      right:0 !important;
+      margin:auto;
+      top:150px !important;
+    }
+  }//end 900px
 
-@media only screen and (max-width: 910px){
-  padding-top: 1px !important;
-  padding-bottom: 35px !important;
-  .aboutWords,
-  form{
-    position: relative !important;
-    display: block !important;
-    margin: 0 auto !important;
-    top:0 !important;
-    bottom: 0 !important;
-    left:0 !important;
-    right:0 !important;
-  }
-  .aboutWords{
-    width: 80% !important;
-    margin-top: 35px !important;
-  }
-  form{
-    margin-top: 20px !important;
-    margin-bottom: 35px !important;
-  }
-}//end 910px
+  @media only screen and (max-width: 785px){
+    .words{
+      margin-top: 30px;
+    }
+  }//end 785px
 
-@media only screen and (max-width: 730px){
-  height: auto !important;
-  .aboutWords{
-    width: 90% !important;
-    font-size: 14px;
-  }
-  form{
-    width: 70% !important;
-    padding-top: 10px !important;
-    padding-bottom: 35px !important;
-  }
-}//end 730px
-@media only screen and (max-width: 500px){
-  form{
-    width: 80% !important;
-  }
-}
-  .aboutWords{
-    color: white;
-    font-family:$mono;
-    position: absolute;
-    top:30px;
-    left:30px;
-    width: 40%;
-    p{
-      &:nth-child(n+2){
-        margin-top: 10px;
+  @media only screen and (max-width: 655px){
+    .words{
+      width: 90% !important;
+    }
+    form{
+      width: 90% !important;
+      bottom:0 !important;
+      left:0 !important;
+      right:0 !important;
+      margin:auto;
+      top:150px !important;
+    }
+  }//end 655px
+  @media only screen and (max-width: 540px){
+    form{
+      top:250px !important;
+    }
+  }//end 540px
+  @media only screen and (max-width: 500px){
+    form{
+      top:300px !important;
+      font-size: 14px !important;
+      .timeline{
+        .itemWrap{
+          height: 150px !important;
+
+        }
       }
     }
-  }
+  }//end 500px
+  @media only screen and (max-width: 400px){
+    .words{
+      font-size: 14px;
+    }
+  }//end 400px
 
+
+.scrollme{
+  //border: 3px solid tomato;
+  margin-top: 0%;
+}
   form{
     width: 40%;
     position: absolute;
-    bottom:30px;
-    left:30px;
+    top:100px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
     height: 360px;
     font-family: $mono;
     color: white;
+    //border: 2px solid yellow;
 
+    .timeline,
+    .budget{
+      height: 38px;
+      width: 50.1% ;
+      background-color: transparent;
+      border: 1px solid white;
+      position: absolute;
+      top:38px;
+      margin: auto;
+      color: white;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+.timeline{
+  left:0;
+  z-index: 1;
+  p{
+    margin-top: 5px;
+    width: 100% !important;
+    span{
+      float: right;
+      margin-top: -3px;
+    }
+  }//end p
+  .itemWrap{
+    background-color: lightblue;
+    width: 100% !important;
+    height: 120px;
+    margin-top: 15px;
+    //margin-left:-10px !important;
+    z-index: 10000;
+    display: none;
+
+    .checkbox{
+      color: black;
+      margin: 5px 0 0 15px;
+      &:nth-child(1){
+      padding-top: 10px !important;
+
+      }
+    }
+  }
+}//end .timeline
+.budget{
+  right:0;
+  z-index: 1;
+  p{
+    margin-top: 5px;
+    span{
+    float: right;
+    margin-top: -3px;
+    }
+  }//end p
+
+  .itemWrap{
+    background-color: lightblue;
+    width: 100% !important;
+    height: 120px;
+    margin-top: 15px;
+    //margin-left:-10px !important;
+    z-index: 10000;
+    display: none;
+
+    .checkbox{
+      color: black;
+      margin: 5px 0 0 15px;
+      &:nth-child(1){
+      padding-top: 10px !important;
+
+      }
+    }
+  }
+}//end .timeline
     ::-webkit-input-placeholder {
-       color: #E8B4BC;
+       color: white;
     }
     :-moz-placeholder { /* Firefox 18- */
-       color: #E8B4BC;
+       color: white;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-       color: #E8B4BC;
+       color: white;
     }
 
     :-ms-input-placeholder {
-       color: #E8B4BC;
+       color: white;
     }
     input{
       background-color: transparent;
       position: relative;
-      border: 1px solid lightblue;
+      border: 1px solid white;
       &:focus{
         outline: 0;
       }
@@ -652,23 +829,20 @@ background: url('../img/main.jpeg') no-repeat center center !important;
     }
     #name,
     #email{
-      width: 50%;
+      width: 50.1% !important;
       position: absolute;
+      top:1px;
     }
     #name{
-      top:0;
       left:0;
     }
     #email{
-      top:0;
       right:0;
-      border-left:none;
     }
     #subject{
       position: absolute;
       top:38px;
       width: 100%;
-      border-top: none;
     }
     textarea{
       background-color: transparent;
@@ -677,8 +851,10 @@ background: url('../img/main.jpeg') no-repeat center center !important;
       width: 100%;
       height: 200px;
       padding: 10px;
-      border: 1px solid lightblue;
-      border-top: none;
+      border: 1px solid white;
+      &:focus{
+        outline: 0;
+      }
     }
     button{
       position: absolute;
@@ -686,11 +862,11 @@ background: url('../img/main.jpeg') no-repeat center center !important;
       left:0 ;
       right:0 ;
       margin: auto ;
-      color: lightblue;
+      color: white;
       height: 50px;
       width: 130px;
       background-color: transparent;
-      border: 1px solid lightblue;
+      border: 1px solid white;
     }
   }//end form
 }

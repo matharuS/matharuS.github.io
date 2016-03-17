@@ -441,127 +441,237 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px; }
 
-.aboutContact {
+.services {
+  height: 100%;
+  width: 100%;
+  background-color: #BCD198;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (max-width: 1000px) {
+    .services .holdItem:nth-child(-n+4) {
+      margin-right: 15px; }
+    .services img {
+      height: 100px !important;
+      width: 100px !important; } }
+  @media only screen and (max-width: 800px) {
+    .services {
+      min-height: 500px !important; }
+      .services .hold {
+        bottom: 100px;
+        width: 80% !important;
+        display: block !important;
+        margin: 100px auto 0 auto !important;
+        position: relative !important; }
+      .services .holdItem:nth-child(-n+4) {
+        margin-right: 15px; }
+      .services img {
+        height: 100px !important;
+        width: 100px !important; } }
+  @media only screen and (max-width: 433px) {
+    .services .hold {
+      margin-top: 20px !important; } }
+  .services .title {
+    text-align: center;
+    width: 100%;
+    font-family: "Anonymous Pro", monospace; }
+  .services .hold {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center; }
+  .services .holdItem {
+    display: inline-block;
+    vertical-align: top; }
+    .services .holdItem img {
+      height: 150px;
+      width: 150px;
+      border-radius: 100%; }
+    .services .holdItem p {
+      text-align: center;
+      color: black;
+      margin-top: 10px;
+      font-family: "Anonymous Pro", monospace; }
+
+.estimate {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
   background-image: url("../img/45.JPG");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
-  @media only screen and (max-width: 1150px) {
-    .aboutContact {
-      height: 600px !important; }
-      .aboutContact .aboutWords {
-        width: 50% !important; }
-      .aboutContact form {
-        width: 50% !important; } }
-  @media only screen and (max-width: 1090px) {
-    .aboutContact .aboutWords,
-    .aboutContact form {
-      width: 60% !important; } }
-  @media only screen and (max-width: 910px) {
-    .aboutContact {
-      padding-top: 1px !important;
-      padding-bottom: 35px !important; }
-      .aboutContact .aboutWords,
-      .aboutContact form {
-        position: relative !important;
-        display: block !important;
-        margin: 0 auto !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important; }
-      .aboutContact .aboutWords {
-        width: 80% !important;
-        margin-top: 35px !important; }
-      .aboutContact form {
-        margin-top: 20px !important;
-        margin-bottom: 35px !important; } }
-  @media only screen and (max-width: 730px) {
-    .aboutContact {
-      height: auto !important; }
-      .aboutContact .aboutWords {
-        width: 90% !important;
-        font-size: 14px; }
-      .aboutContact form {
-        width: 70% !important;
-        padding-top: 10px !important;
-        padding-bottom: 35px !important; } }
-  @media only screen and (max-width: 500px) {
-    .aboutContact form {
-      width: 80% !important; } }
-  .aboutContact .aboutWords {
+  background-size: cover;
+  position: relative; }
+  .estimate .words {
     color: white;
     font-family: "Anonymous Pro", monospace;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 40%; }
-    .aboutContact .aboutWords p:nth-child(n+2) {
-      margin-top: 10px; }
-  .aboutContact form {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 50px; }
+    .estimate .words p {
+      margin-top: 5px; }
+  @media only screen and (max-width: 1140px) {
+    .estimate form {
+      width: 50% !important; } }
+  @media only screen and (max-width: 900px) {
+    .estimate form {
+      width: 70% !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: auto;
+      top: 150px !important; } }
+  @media only screen and (max-width: 785px) {
+    .estimate .words {
+      margin-top: 30px; } }
+  @media only screen and (max-width: 655px) {
+    .estimate .words {
+      width: 90% !important; }
+    .estimate form {
+      width: 90% !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin: auto;
+      top: 150px !important; } }
+  @media only screen and (max-width: 540px) {
+    .estimate form {
+      top: 250px !important; } }
+  @media only screen and (max-width: 500px) {
+    .estimate form {
+      top: 300px !important;
+      font-size: 14px !important; }
+      .estimate form .timeline .itemWrap {
+        height: 150px !important; } }
+  @media only screen and (max-width: 400px) {
+    .estimate .words {
+      font-size: 14px; } }
+  .estimate .scrollme {
+    margin-top: 0%; }
+  .estimate form {
     width: 40%;
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     height: 360px;
     font-family: "Anonymous Pro", monospace;
     color: white; }
-    .aboutContact form ::-webkit-input-placeholder {
-      color: #E8B4BC; }
-    .aboutContact form :-moz-placeholder {
-      /* Firefox 18- */
-      color: #E8B4BC; }
-    .aboutContact form ::-moz-placeholder {
-      /* Firefox 19+ */
-      color: #E8B4BC; }
-    .aboutContact form :-ms-input-placeholder {
-      color: #E8B4BC; }
-    .aboutContact form input {
+    .estimate form .timeline,
+    .estimate form .budget {
+      height: 38px;
+      width: 50.1%;
       background-color: transparent;
-      position: relative;
-      border: 1px solid lightblue; }
-      .aboutContact form input:focus {
-        outline: 0; }
-    .aboutContact form #name,
-    .aboutContact form #email,
-    .aboutContact form #subject {
-      padding: 10px; }
-    .aboutContact form #name,
-    .aboutContact form #email {
-      width: 50%;
-      position: absolute; }
-    .aboutContact form #name {
-      top: 0;
-      left: 0; }
-    .aboutContact form #email {
-      top: 0;
-      right: 0;
-      border-left: none; }
-    .aboutContact form #subject {
+      border: 1px solid white;
       position: absolute;
       top: 38px;
-      width: 100%;
-      border-top: none; }
-    .aboutContact form textarea {
+      margin: auto;
+      color: white; }
+      .estimate form .timeline:hover,
+      .estimate form .budget:hover {
+        cursor: pointer; }
+    .estimate form .timeline {
+      left: 0;
+      z-index: 1; }
+      .estimate form .timeline p {
+        margin-top: 5px;
+        width: 100% !important; }
+        .estimate form .timeline p span {
+          float: right;
+          margin-top: -3px; }
+      .estimate form .timeline .itemWrap {
+        background-color: lightblue;
+        width: 100% !important;
+        height: 120px;
+        margin-top: 15px;
+        z-index: 10000;
+        display: none; }
+        .estimate form .timeline .itemWrap .checkbox {
+          color: black;
+          margin: 5px 0 0 15px; }
+          .estimate form .timeline .itemWrap .checkbox:nth-child(1) {
+            padding-top: 10px !important; }
+    .estimate form .budget {
+      right: 0;
+      z-index: 1; }
+      .estimate form .budget p {
+        margin-top: 5px; }
+        .estimate form .budget p span {
+          float: right;
+          margin-top: -3px; }
+      .estimate form .budget .itemWrap {
+        background-color: lightblue;
+        width: 100% !important;
+        height: 120px;
+        margin-top: 15px;
+        z-index: 10000;
+        display: none; }
+        .estimate form .budget .itemWrap .checkbox {
+          color: black;
+          margin: 5px 0 0 15px; }
+          .estimate form .budget .itemWrap .checkbox:nth-child(1) {
+            padding-top: 10px !important; }
+    .estimate form ::-webkit-input-placeholder {
+      color: white; }
+    .estimate form :-moz-placeholder {
+      /* Firefox 18- */
+      color: white; }
+    .estimate form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: white; }
+    .estimate form :-ms-input-placeholder {
+      color: white; }
+    .estimate form input {
+      background-color: transparent;
+      position: relative;
+      border: 1px solid white; }
+      .estimate form input:focus {
+        outline: 0; }
+    .estimate form #name,
+    .estimate form #email,
+    .estimate form #subject {
+      padding: 10px; }
+    .estimate form #name,
+    .estimate form #email {
+      width: 50.1% !important;
+      position: absolute;
+      top: 1px; }
+    .estimate form #name {
+      left: 0; }
+    .estimate form #email {
+      right: 0; }
+    .estimate form #subject {
+      position: absolute;
+      top: 38px;
+      width: 100%; }
+    .estimate form textarea {
       background-color: transparent;
       position: absolute;
       top: 75px;
       width: 100%;
       height: 200px;
       padding: 10px;
-      border: 1px solid lightblue;
-      border-top: none; }
-    .aboutContact form button {
+      border: 1px solid white; }
+      .estimate form textarea:focus {
+        outline: 0; }
+    .estimate form button {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       margin: auto;
-      color: lightblue;
+      color: white;
       height: 50px;
       width: 130px;
       background-color: transparent;
-      border: 1px solid lightblue; }
+      border: 1px solid white; }
 
 footer {
   width: 100%;
