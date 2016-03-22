@@ -236,62 +236,108 @@ body {
 
 .portfolioWebsites {
   background-color: #CC7178;
-  height: auto !important; }
-  .portfolioWebsites .longText {
-    color: white;
-    width: 20px;
-    height: 160px;
+  height: auto;
+  position: relative;
+  overflow: hidden; }
+  .portfolioWebsites .fdSection {
+    /*
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 1.8%;
+    top:10%;
+    left:0;
+    right:0;
     margin: auto;
-    text-align: left;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-family: "Anonymous Pro", monospace; }
-    @media only screen and (max-width: 790px) {
-      .portfolioWebsites .longText {
-        left: 1.2%; } }
-    @media only screen and (max-width: 790px) {
-      .portfolioWebsites .longText {
-        left: 0.8%; } }
-  .portfolioWebsites .sites {
-    width: auto;
+    width: 60%;
     height: auto;
-    overflow-y: scroll;
+    */
     display: block;
-    margin: 0 auto 0 auto;
-    padding-bottom: 50px; }
-    .portfolioWebsites .sites .li {
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 60%; }
+    .portfolioWebsites .fdSection img {
       height: auto;
-      width: auto;
-      margin-top: 30px; }
-      .portfolioWebsites .sites .li:nth-last-child {
-        margin-bottom: 100px; }
-      @media only screen and (max-width: 925px) {
-        .portfolioWebsites .sites .li {
-          display: block !important; } }
-      .portfolioWebsites .sites .li img {
-        height: 250px;
-        width: auto; }
-        @media only screen and (max-width: 1111px) {
-          .portfolioWebsites .sites .li img {
-            height: 200px; } }
-        @media only screen and (max-width: 525px) {
-          .portfolioWebsites .sites .li img {
-            height: 150px; } }
-        @media only screen and (max-width: 401px) {
-          .portfolioWebsites .sites .li img {
-            height: 125px; } }
-    .portfolioWebsites .sites .tempVar {
-      background-image: url("../img/combo.png");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-  @media only screen and (max-width: 1000px) {
-    .portfolioWebsites .longText {
-      left: 4% !important; } }
+      width: 100%;
+      -webkit-box-shadow: 0px 9px 46px -6px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 9px 46px -6px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 9px 46px -6px rgba(0, 0, 0, 0.75);
+      padding: 10px; }
+    .portfolioWebsites .fdSection a {
+      color: black; }
+      .portfolioWebsites .fdSection a p {
+        text-align: center;
+        margin-top: 30px;
+        font-family: "Anonymous Pro", monospace; }
+  .portfolioWebsites .bottomSection {
+    display: block;
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    margin-top: 10%; }
+    @media only screen and (max-width: 600px) {
+      .portfolioWebsites .bottomSection {
+        height: 35vh !important; } }
+  .portfolioWebsites .bottom3 {
+    width: 33.33%;
+    position: absolute;
+    bottom: 0;
+    height: 100%; }
+  .portfolioWebsites .bottomItem {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .portfolioWebsites .bottomItem img {
+      width: 80%;
+      padding: 10px;
+      display: block;
+      margin: 0 auto; }
+      @media only screen and (max-width: 625px) {
+        .portfolioWebsites .bottomItem img {
+          padding: 5px; } }
+    .portfolioWebsites .bottomItem a {
+      color: black; }
+      .portfolioWebsites .bottomItem a p {
+        text-align: center;
+        font-family: arial;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-top: 20px; }
+        @media only screen and (max-width: 725px) {
+          .portfolioWebsites .bottomItem a p {
+            font-size: 12px; } }
+        @media only screen and (max-width: 500px) {
+          .portfolioWebsites .bottomItem a p {
+            font-size: 10px; } }
+  .portfolioWebsites .illSection {
+    left: 0;
+    background-color: #1B9AAA;
+    -webkit-box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important;
+    -moz-box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important;
+    box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important; }
+    .portfolioWebsites .illSection img {
+      -webkit-box-shadow: 0px 9px 46px -6px rgba(125, 24, 24, 0.75);
+      -moz-box-shadow: 0px 9px 46px -6px rgba(125, 24, 24, 0.75);
+      box-shadow: 0px 9px 46px -6px rgba(125, 24, 24, 0.75); }
+  .portfolioWebsites .yummerSection {
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #F9DBBD;
+    -webkit-box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important;
+    -moz-box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important;
+    box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important; }
+    .portfolioWebsites .yummerSection img {
+      -webkit-box-shadow: 0px 9px 46px -6px rgba(22, 30, 70, 0.75);
+      -moz-box-shadow: 0px 9px 46px -6px rgba(22, 30, 70, 0.75);
+      box-shadow: 0px 9px 46px -6px rgba(22, 30, 70, 0.75); }
+  .portfolioWebsites .konozSection {
+    right: 0;
+    background-color: #B37FD1;
+    -webkit-box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important;
+    -moz-box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important;
+    box-shadow: 0px 9px 30px -6px rgba(125, 24, 24, 0.75) !important; }
+    .portfolioWebsites .konozSection img {
+      -webkit-box-shadow: 0px 9px 46px -6px rgba(22, 66, 19, 0.75);
+      -moz-box-shadow: 0px 9px 46px -6px rgba(22, 66, 19, 0.75);
+      box-shadow: 0px 9px 46px -6px rgba(22, 66, 19, 0.75); }
 
 .portfolioAnimations {
   background-color: #494473;
