@@ -1,146 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Matharu.io: Web Design</title>
+    <title>Matharu.io</title>
     <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="scss/main.css">
     <link rel="shortcut icon" type="image/ico" href="assets/logo.ico"/>
-    <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   </head>
-
   <body>
-    <!--
-    <a class="deer" href="index.html">
-      <img src="assets/whiteDeer.svg" alt="">
-    </a>
-  -->
-    <div class="menuLines">
-      <div class="line l1"></div>
-      <div class="line l2"></div>
-      <div class="line l3"></div>
-    </div>
-    <section class="menuAfter">
-      <ul class="ul">
-        <li class="li menuItem menuHome"><a href="index.html"><p>Home</p></a></li>
-        <li class="li menuItem menuPortfolio"><p>Portfolio</p></li>
-        <li class="li menuItem menuServices"><p>Services</p></li>
-        <li class="li menuItem menuLab"><p>Lab</p></li>
-        <li class="li menuItem menuContact"><p>Contact</p></li>
-      </ul>
-    </section>
-    <section class="contactAfter">
-      <button class="exit">X</button>
-      <div class="contactForm">
-      <form action="http://formspree.io/sajaan.matharu@gmail.com" method="POST" class="cntr">
-          <input name="contactPageName" type="text" id="name" placeholder="Name"/>
-          <input name="email" type="email" id="email" placeholder="Email"/>
-        <!-- temporary comment,  (This is a honeypot to catch webscrapers) -->
-				<input type="hidden" name="_next" value="responce.html" />
-        <input type="text" name="_gotcha" style="display:none;" />
-          <label for="message"></label>
-          <textarea class="cntr" id="message" name="message" placeholder="Message" Required></textarea>
-          <button class="cntr" type="submit">Submit</button>
-      </form>
-    </div>
-    </section>
-    <section class="banner  panel one">
-      <div class="bannerBig">
-        <h1 class="bannerBigText">hello.</h1>
-        <p class="bannerP">I Design and Develop Digital Experiences</p>
-      </div>
-    </section>
-    <section class=" panel two">
-      <div class="words">
-        <p>My name is Sajaan Matharu.
-        I'm a Technical Designer &amp Front End Developer with 2 years of experience operating out of Cupertino, CA.</p>
-      <!--
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum</p>
-    -->
-      </div>
-    </section>
+   <div class="loadingShell"></div>
 
-    <section class=" panel three">
-      <button class="portfolioSite">
-        <a href="http://freshDesign.io">
-          <img src="img/matharu2.gif">
-        </a>
-      </button>
-      <p class="website"><a href="http://freshDesign.io">freshDesign.io</a></p>
-      <ul>
-        <a href="https://www.producthunt.com/tech/freshdesign-io">
-          <li>#2 On ProductHunt.com March 19, 2016</li>
-          <li>630+ Votes</li>
-        </a>
-      </ul>
-    </section>
-
-    <section class="fourHold ">
-      <section class=" fourA">
-        <button class="portfolioSite">
-          <a href="minimalistPortfolio/index.html">
-            <img src="img/minimalistPortfolio3.gif">
-          </a>
-        </button>
-        <p class="website">Minimalist Portfolio</p>
-      </section>
-      <section class=" fourB">
-        <button class="portfolioSite">
-          <a href="blueMoon/index.html">
-            <img src="img/blueMoon.gif">
-          </a>
-        </button>
-        <p class="website">Blue Moon Blog</p>
-      </section>
-    </section>
-    <section class="services panel">
-      <ul class="ul">
-        <li class="li serviceItem">3D</li>
-        <li class="li serviceItem">Branding</li>
-        <li class="li serviceItem">Consulting</li>
-        <li class="li serviceItem">Concept &amp Strategy</li>
-        <li class="li serviceItem">Design &amp Direction</li>
-        <li class="li serviceItem">Prototyping</li>
-      </ul>
-    </section>
-    <section class="lab panel">
-      <div class="labHold">
-        <a href="lab.html">
-          <img src="img/brainTemp.png" >
-          <p class="labButton">Lab</p>
-        </a>
-      </div>
-    </section>
-    <section class="footer panel">
-      <img class="footerDeer" src="assets/whiteDeer.svg" alt="">
-      <div class="footHold">
-        <div class="footline fShort t1"></div>
-        <div class="footline fMed t2"></div>
-        <div class="footline fLong t3"></div>
-        <div class="footWords">
-          <p class="sentence">When you do things right, people won't be sure you've done anything at all quote origin</p>
-          <p class="origin">Futurama: S03 E20</p>
+   <!--
+   <p class="menu">menu</p>
+   <section class="menuContent">
+    <ul class="ul">
+      <li class="menuItem menuLogo"><a href="index.html"><img src="img/whiteDeer.svg"></a></li>
+      <li class="menuItem menuPortfolio"><p>Portfolio</p></li>
+      <li class="menuItem menuServices"><p>Services</p></li>
+      <li class="menuItem menuContact"><p>Contact</p></li>
+    </ul>
+   </section>
+ -->
+    <section id="shell" >
+      <section class="banner">
+        <div class="imgHold">
+          <img src="img/hello.png">
         </div>
-        <div class="footline fLong s1"></div>
-        <div class="footline fMed s2"></div>
-        <div class="footline fShort s3"></div>
-      </div>
-      <p class="contact">contact</p>
-      <ul class="ul social">
-        <li class="li"><a href="https://www.linkedin.com/in/sajaanmatharu" class="fa fa-linkedin" aria-hidden="true"></a></li>
-        <li class="li"><a href="https://angel.co/sajaan-matharu" class="fa fa-angellist" aria-hidden="true"></a></li>
-        <li class="li"><a href="https://github.com/matharus" class="fa fa-github" aria-hidden="true"></a></li>
-      </ul>
-      <p class="legal">© 2016 Matharu.io</p>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="imgRow">
+          <a href="http://earthPalette.space"><img src="img/earthPalette.gif" alt=""></a>
+          <a href="http://freshDesign.io"><img src="img/fd.gif" alt=""></a>
+        </div>
+        <div class="imgRow">
+          <a href="blueMoon/index.html"><img src="img/blueMoon.gif" alt=""></a>
+          <a href="minimalistPortfolio/index.html"><img src="img/jj.gif" alt=""></a>
+        </div>
+      </section>
+      <section class="me">
+        <p>My name is Sajaan Matharu. I'm a Technical Designer & Front End Developer with 2 years of experience operating out of Cupertino, CA.</p>
+      </section>
+      <section class="services">
+        <ul class="ul">
+          <li class="li serviceItem">3D</li>
+          <li class="li serviceItem">Branding</li>
+          <li class="li serviceItem">Consulting</li>
+          <li class="li serviceItem">Concept &amp Strategy</li>
+          <li class="li serviceItem">Design &amp Direction</li>
+          <li class="li serviceItem">Prototyping</li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <button class="contact">contact</button>
+        <ul class="ul social">
+          <li class="li"><a href="#" class="fa fa-linkedin"></a></li>
+          <li class="li"><a href="#" class="fa fa-angellist"></a></li>
+          <li class="li"><a href="#" class="fa fa-github"></a></li>
+        </ul>
+        <img id="deer" src="img/blackDeerBold.png">
+        <p class="copyright">2<span>©</span>16</p>
+      </footer>
+    </section><!-- end shell -->
+
+    <section class="contactAfter">
+      <button class="contactExit">X</button>
+      <form action="http://formspree.io/sajaan.matharu@gmail.com" method="POST" class="cntr">
+        <input name="contactPageName" type="text" id="name" placeholder="Name"/>
+        <input name="email" type="email" id="email" placeholder="Email"/>
+        <!-- temporary comment,  (This is a honeypot to catch webscrapers) -->
+        <input type="hidden" name="_next" value="responce.html" />
+        <input type="text" name="_gotcha" style="display:none;" />
+        <label for="message"></label>
+        <textarea class="cntr" id="message" name="message" placeholder="Message" Required></textarea>
+        <button class="cntr" type="submit">Submit</button>
+      </form>
     </section>
+
   </body>
+  <!--
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>-->
+  <script type="text/javascript" src="js/matharu.min.js"></script>
 </html>
