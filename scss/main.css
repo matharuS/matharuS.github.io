@@ -454,24 +454,45 @@ body {
     background-color: transparent;
     position: relative;
     min-height: 375px; }
-    #shell .footer .contact {
-      position: absolute;
+    #shell .footer .forCentering {
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       margin: auto;
-      height: 50px;
+      height: 90px;
       width: 100px;
-      font-family: "Inconsolata", monospace;
-      color: black;
-      text-align: center;
-      border: 1px solid black;
-      background-color: transparent; }
-      #shell .footer .contact:hover {
-        cursor: pointer; }
-      #shell .footer .contact:focus {
-        outline: 0; }
+      position: absolute; }
+      #shell .footer .forCentering .contact {
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        font-family: "Inconsolata", monospace;
+        color: black;
+        text-align: center;
+        border: 1px solid black;
+        background-color: transparent;
+        height: 50px;
+        width: 100px; }
+        #shell .footer .forCentering .contact:hover {
+          cursor: pointer; }
+        #shell .footer .forCentering .contact:focus {
+          outline: 0; }
+      #shell .footer .forCentering .resume {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 20px;
+        width: 80px;
+        font-family: "Inconsolata", monospace;
+        letter-spacing: 3px;
+        font-size: 13px;
+        color: white;
+        text-align: center; }
     #shell .footer .social {
       position: absolute;
       bottom: 90px;
