@@ -247,6 +247,7 @@ body{
     top:30px;right:30px;bottom:30px;left:30px;
     background-color: #9DA6BB;
     z-index: 200;
+    opacity:0;
     @media only screen and (max-width: 600px){
       top:15px !important;left:15px !important;right:15px !important;bottom:15px !important;
     }
