@@ -324,6 +324,7 @@ body {
   height: auto;
   width: auto;
   overflow: scroll;
+  opacity: 0;
   -webkit-box-shadow: 3px 10px 69px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 10px 69px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 10px 69px -12px rgba(0, 0, 0, 0.75);
